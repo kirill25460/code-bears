@@ -4,4 +4,5 @@ export const FlexHeroBox = styled.div`
   display: flex;
   justify-content: center; /* Горизонтальное центрирование */
   align-items: center;
+  margin-bottom: 154px;
 `;
