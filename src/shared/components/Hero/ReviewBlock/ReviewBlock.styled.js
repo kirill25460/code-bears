@@ -1,7 +1,16 @@
 import styled from 'styled-components';
 
 export const BlockImg = styled.img`
-    opacity: 0.3;
+  position: relative;
+  opacity: 0.3;
+  z-index: 0;
+`;
+
+export const BlockShadowImg = styled.img`
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  z-index: -1;
 `;
 
 export const ImageWithOverlay = styled.div`
@@ -25,17 +34,31 @@ export const ImageText = styled.p`
   line-height: 24px;
   color: #ffffff;
 
-
   width: 463px;
   margin-bottom: 10px;
 `;
 
-export const Button = styled.button`
-  padding: 10px 20px;
+export const FlexBox = styled.div`
+  display: flex;
+`;
+
+export const BookService = styled.p`
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
   font-size: 16px;
-  background-color: #3498db; /* Цвет кнопки */
-  color: #fff; /* Цвет текста кнопки */
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
+  line-height: 24px;
+  margin-right: 14px;
+
+  color: #5b5b5b;
+`;
+
+export const Button = styled.button`
+  box-sizing: border-box;
+  width: 58px;
+  height: 30px;
+
+  background: #282829;
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
 `;
