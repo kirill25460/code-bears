@@ -1,6 +1,6 @@
 import { BlockImg, Button, ImageText, ImageWithOverlay, OverlayContent } from './ReviewBlock.styled';
 import bl from '../../../images/block.png';
-import bl_shadow from '../../../images/block_shadow.png'
+// import bl_shadow from '../../../images/block_shadow.png'
 
 const ReviewBlock = () => {
   return (
