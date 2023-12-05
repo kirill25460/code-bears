@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const ToolbarConteiner = styled.div`
-  margin-left: 144px;
-  margin-right: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 158px;
-
 `;

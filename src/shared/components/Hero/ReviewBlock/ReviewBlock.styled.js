@@ -1,4 +1,11 @@
 import styled from 'styled-components';
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+
+export const Arrow = styled(HiOutlineArrowNarrowRight)`
+  height: 24px;
+  width: 40px;
+  color: #9f9f9f;
+`;
 
 export const BlockImg = styled.img`
   position: relative;
@@ -20,7 +27,7 @@ export const ImageWithOverlay = styled.div`
 
 export const OverlayContent = styled.div`
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff; /* Цвет текста */
@@ -40,6 +47,7 @@ export const ImageText = styled.p`
 
 export const FlexBox = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 export const BookService = styled.p`
@@ -54,6 +62,9 @@ export const BookService = styled.p`
 `;
 
 export const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   width: 58px;
   height: 30px;

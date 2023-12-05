@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const ActionBlockContainer = styled.div`
+  display: block;
+  margin-right: 142px;
+`
+
 export const MainTextActionBlock = styled.p`
   font-family: 'DM Sans';
   font-style: normal;

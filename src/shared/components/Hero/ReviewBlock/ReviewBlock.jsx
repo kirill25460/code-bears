@@ -7,10 +7,10 @@ import {
   BookService,
   FlexBox,
   BlockShadowImg,
+  Arrow
 } from './ReviewBlock.styled';
 import bl from '../../../images/block.png';
 import bg from '../../../images/block_shadow.png';
-// import bl_shadow from '../../../images/block_shadow.png'
 
 const ReviewBlock = () => {
   return (
@@ -31,7 +31,7 @@ const ReviewBlock = () => {
           </ImageText>
           <FlexBox>
             <BookService>by: BookService</BookService>
-            <Button>Click</Button>
+            <Button><Arrow /></Button>
           </FlexBox>
         </OverlayContent>
       </ImageWithOverlay>
