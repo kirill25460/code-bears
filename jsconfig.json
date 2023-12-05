@@ -2,5 +2,5 @@
   "compilerOptions": {
     "baseUrl": "src"
   },
-  "include": ["src"]
+  "include": ["src", "src/shared/components/Toolbar/PhotoBlock/ImageBlock.js"]
 }
