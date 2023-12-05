@@ -1,19 +1,16 @@
 {
   "files": {
     "main.css": "/code-bears/static/css/main.56a7a611.css",
-    "main.js": "/code-bears/static/js/main.25f31bff.js",
-    "static/media/bearHero.png": "/code-bears/static/media/bearHero.6426312f6f9a89418c46.png",
-    "static/media/first.png": "/code-bears/static/media/first.4bb707451a845ef2d1cf.png",
-    "static/media/fourth.png": "/code-bears/static/media/fourth.506403b62f04aeeb4a85.png",
+    "main.js": "/code-bears/static/js/main.c03fbe3e.js",
+    "static/media/bearHero.png": "/code-bears/static/media/bearHero.78b88daa789d1c040d2a.png",
+    "static/media/sites.png": "/code-bears/static/media/sites.eba0198e4d26829c49e3.png",
     "static/media/block.png": "/code-bears/static/media/block.3ffd2dbaebd59991769e.png",
-    "static/media/second.png": "/code-bears/static/media/second.695a850660eafdc3f248.png",
-    "static/media/third.png": "/code-bears/static/media/third.881f2b52f5d70c71ce2a.png",
     "index.html": "/code-bears/index.html",
     "main.56a7a611.css.map": "/code-bears/static/css/main.56a7a611.css.map",
-    "main.25f31bff.js.map": "/code-bears/static/js/main.25f31bff.js.map"
+    "main.c03fbe3e.js.map": "/code-bears/static/js/main.c03fbe3e.js.map"
   },
   "entrypoints": [
     "static/css/main.56a7a611.css",
-    "static/js/main.25f31bff.js"
+    "static/js/main.c03fbe3e.js"
   ]
 }
