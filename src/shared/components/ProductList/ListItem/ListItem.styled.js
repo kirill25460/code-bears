@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+import { FaPlusCircle } from 'react-icons/fa';
+import { IoIosCloseCircle } from 'react-icons/io';
 
 export const WebDesignConteiner = styled.div`
   width: 1012px;
   height: 128px;
   border-bottom: 1px solid #ffffff;
   position: relative;
-  margin-bottom: 50px;
 
   &::after {
     content: '';
@@ -13,8 +14,8 @@ export const WebDesignConteiner = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px; 
-    background-color: #YourHighlightColor; 
+    height: 4px;
+    background-color: #YourHighlightColor;
   }
 `;
 
@@ -24,6 +25,9 @@ export const WebDesignMainText = styled.p`
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   color: #ffffff;
 `;
@@ -43,7 +47,7 @@ export const FrontendDevelopmentConteiner = styled.div`
   height: 128px;
   border-bottom: 1px solid #ffffff;
   position: relative;
-  margin-bottom: 50px;
+
 
   &::after {
     content: '';
@@ -51,19 +55,26 @@ export const FrontendDevelopmentConteiner = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px; 
-    background-color: #YourHighlightColor; 
+    height: 4px;
+    background-color: #YourHighlightColor;
   }
 `;
 
-export const FrontendDevelopmentMainText = styled.div`
-font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 28px;
 
-color: #ffffff;
+export const FrontendDevelopmentMainText = styled.div`
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; 
+
+  
+
+  color: #ffffff;
 `;
 
 export const BackendDevelopmentConteiner = styled.div`
@@ -71,7 +82,6 @@ export const BackendDevelopmentConteiner = styled.div`
   height: 128px;
   border-bottom: 1px solid #ffffff;
   position: relative;
-  margin-bottom: 50px;
 
   &::after {
     content: '';
@@ -79,19 +89,23 @@ export const BackendDevelopmentConteiner = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px; 
-    background-color: #YourHighlightColor; 
+    height: 4px;
+    background-color: #YourHighlightColor;
   }
 `;
 
 export const BackendDevelopmentMainText = styled.div`
-font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 28px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; 
 
-color: #ffffff;
+  color: #ffffff;
 `;
 
 export const OptimizationConteiner = styled.div`
@@ -106,17 +120,33 @@ export const OptimizationConteiner = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px; 
-    background-color: #YourHighlightColor; 
+    height: 4px;
+    background-color: #YourHighlightColor;
   }
 `;
 
 export const OptimizationMainText = styled.div`
-font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 28px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; 
 
-color: #ffffff;
+  color: #ffffff;
+`;
+
+export const TextContainer = styled.div``;
+
+export const Plus = styled(FaPlusCircle)`
+  height: 24px;
+  width: 24px;
+`;
+
+export const CloseCircle = styled(IoIosCloseCircle)`
+  height: 24px;
+  width: 24px;
 `;

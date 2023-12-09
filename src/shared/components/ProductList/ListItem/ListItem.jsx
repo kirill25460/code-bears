@@ -1,10 +1,13 @@
 import {
   BackendDevelopmentConteiner,
   BackendDevelopmentMainText,
+  CloseCircle,
   FrontendDevelopmentConteiner,
   FrontendDevelopmentMainText,
   OptimizationConteiner,
   OptimizationMainText,
+  Plus,
+  TextContainer,
   WebDesignConteiner,
   WebDesignMainText,
   WebDesignText,
@@ -14,7 +17,10 @@ const ListItem = () => {
   return (
     <>
       <WebDesignConteiner>
-        <WebDesignMainText>Web Design</WebDesignMainText>
+        <WebDesignMainText>
+          Web Design
+          <CloseCircle />
+        </WebDesignMainText>
         <WebDesignText>
           Website design, including layouts, color schemes, logos, and user
           interfaces, your branding and etc.
@@ -22,17 +28,20 @@ const ListItem = () => {
       </WebDesignConteiner>
       <FrontendDevelopmentConteiner>
         <FrontendDevelopmentMainText>
-          Frontend development
+          <TextContainer>Frontend development</TextContainer>
+          <Plus />
         </FrontendDevelopmentMainText>
       </FrontendDevelopmentConteiner>
       <BackendDevelopmentConteiner>
         <BackendDevelopmentMainText>
-          Backend development
+          <TextContainer>Backend development</TextContainer>
+          <Plus />
         </BackendDevelopmentMainText>
       </BackendDevelopmentConteiner>
       <OptimizationConteiner>
         <OptimizationMainText>
-            Optimization and SEO
+          <TextContainer>Optimization and SEO</TextContainer>
+          <Plus />
         </OptimizationMainText>
       </OptimizationConteiner>
     </>
