@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/code-bears/static/css/main.56a7a611.css",
-    "main.js": "/code-bears/static/js/main.23aca1b3.js",
+    "main.css": "/code-bears/static/css/main.c0f3794f.css",
+    "main.js": "/code-bears/static/js/main.706fffdd.js",
+    "static/media/stains.png": "/code-bears/static/media/stains.863871db219c9ebebd8c.png",
+    "static/media/BG.png": "/code-bears/static/media/BG.9c4ffd7377f43b64ad93.png",
     "static/media/Macbook.png": "/code-bears/static/media/Macbook.bb2abc75f47c9f49e2c3.png",
     "static/media/bearHero.png": "/code-bears/static/media/bearHero.78b88daa789d1c040d2a.png",
     "static/media/sites.png": "/code-bears/static/media/sites.eba0198e4d26829c49e3.png",
     "static/media/block.png": "/code-bears/static/media/block.3ffd2dbaebd59991769e.png",
     "index.html": "/code-bears/index.html",
-    "main.56a7a611.css.map": "/code-bears/static/css/main.56a7a611.css.map",
-    "main.23aca1b3.js.map": "/code-bears/static/js/main.23aca1b3.js.map"
+    "main.c0f3794f.css.map": "/code-bears/static/css/main.c0f3794f.css.map",
+    "main.706fffdd.js.map": "/code-bears/static/js/main.706fffdd.js.map"
   },
   "entrypoints": [
-    "static/css/main.56a7a611.css",
-    "static/js/main.23aca1b3.js"
+    "static/css/main.c0f3794f.css",
+    "static/js/main.706fffdd.js"
   ]
 }
