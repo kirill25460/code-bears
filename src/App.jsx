@@ -7,12 +7,14 @@ import Background from 'shared/components/Background/Background';
 
 export const App = () => {
   return (
-    <Background>
+    <>
       <Header />
+      <Background/>
       <Hero />
       <Toolbar />
       <ProductList />
       <WhyUsBlock />
-    </Background>
+  
+    </>
   );
 };

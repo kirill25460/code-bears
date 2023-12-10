@@ -2,19 +2,19 @@ import styled from 'styled-components';
 import Bg from "../../images/BG.png"
 
 export const MainContainer = styled.div`
-z-index: 0;
+z-index:-999;
+height: 400vh;
+position: absolute;
   background-image: url(${Bg});
-  background-size: contain;
   background-repeat: no-repeat;
-  background-size: auto;
-  background-attachment: fixed;
-  background-position: center top;
-  min-height: 100vh;
+  background-size: cover;
+  
   width: 100%;
 `;
 
 export const Wrap = styled.div`
-display: inline-block;
+z-index:-998;
+
 background-size: cover;
 width: 50%;
 height: 50%;

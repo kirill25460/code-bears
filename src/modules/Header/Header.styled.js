@@ -7,5 +7,5 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   background-color: #141415;
   height: 80px;
-  margin-bottom: 100px;
+
 `;

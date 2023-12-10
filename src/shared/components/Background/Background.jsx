@@ -7,10 +7,11 @@ const Background = () => {
 
   const handleMouseMove = e => {
     setMousePosition({ x: e.clientX, y: e.clientY });
+ 
   };
   return (
-    <MainContainer onMouseMove={handleMouseMove}>
-      <Wrap
+    <MainContainer  onMouseMove={handleMouseMove}>
+      <Wrap 
         style={{ 
           backgroundImage: `url(${group})`,
           transform: `translate(-${mousePosition.x / 50}px, 
@@ -20,5 +21,6 @@ const Background = () => {
     </MainContainer>
   );
 };
+
 
 export default Background;

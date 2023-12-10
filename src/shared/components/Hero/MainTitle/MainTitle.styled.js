@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const MainTitleContainer = styled.div`
   text-align: center;
+  margin-top:100px;
   margin-bottom: 52px;
 `;
 
