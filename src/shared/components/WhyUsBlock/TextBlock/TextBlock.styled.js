@@ -17,7 +17,7 @@ export const MainText = styled.p`
 
   color: #ffffff;
 
-//   mix-blend-mode: soft-light;
+  mix-blend-mode: soft-light;
 `;
 
 export const MainNumber = styled.p`
@@ -31,7 +31,7 @@ export const MainNumber = styled.p`
 
   color: #ffffff;
 
-//   mix-blend-mode: soft-light;
+  mix-blend-mode: soft-light;
 `;
 
 
