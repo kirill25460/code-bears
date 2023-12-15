@@ -5,7 +5,9 @@ import Toolbar from 'modules/Toolbar/Toolbar';
 import WhyUsBlock from 'modules/WhyUsBlock/WhyUsBlock';
 import FeatureColumnsWithMoon from 'modules/FeatureColumnsWithMoon/FeatureColumnsWithMoon';
 import Form from 'modules/Form/Form';
+import Footer from 'modules/Footer/Footer';
 import Background from 'shared/components/Background/Background';
+
 
 
 export const App = () => {
@@ -19,6 +21,7 @@ export const App = () => {
       <WhyUsBlock />
       <FeatureColumnsWithMoon />
       <Form />
+      <Footer/>
     </>
   );
 };
