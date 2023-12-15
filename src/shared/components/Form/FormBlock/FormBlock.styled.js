@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const FormBlockContainer = styled.div`
   width: 735px;
   margin: 0 auto;
+  margin-bottom: 40px;
 `;
 
 export const FormBlockInputContainer = styled.div`
