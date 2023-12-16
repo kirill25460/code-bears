@@ -4,6 +4,11 @@ import FormBlock from "shared/components/Form/FormBlock/FormBlock";
 import FooterFrom from "shared/components/Form/FooterFrom/FooterFrom";
 
 const Form = () => {
+
+  
+
+
+
     return (
       <FormConteiner>
         <HeadFrom />
