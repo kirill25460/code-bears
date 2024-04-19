@@ -1,27 +1,13 @@
-import Header from 'modules/Header/Header';
-import Hero from 'modules/Hero/Hero';
-import ProductList from 'modules/ProductList/ProductList';
-import Toolbar from 'modules/Toolbar/Toolbar';
-import WhyUsBlock from 'modules/WhyUsBlock/WhyUsBlock';
-import FeatureColumnsWithMoon from 'modules/FeatureColumnsWithMoon/FeatureColumnsWithMoon';
-import Form from 'modules/Form/Form';
-import Footer from 'modules/Footer/Footer';
-import Background from 'shared/components/Background/Background';
+import { Reset } from 'styled-reset';
+import Main from './components/main';
 
-
-
-export const App = () => {
+function App() {
   return (
-    <>
-      <Header />
-      <Background/>
-      <Hero />
-      <Toolbar />
-      <ProductList />
-      <WhyUsBlock />
-      <FeatureColumnsWithMoon />
-      <Form />
-      <Footer/>
-    </>
+    <div>
+      <Reset/>
+      <Main/>
+    </div>
   );
-};
+}
+
+export default App;
