@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/code-bears/static/css/main.c0f3794f.css",
-    "main.js": "/code-bears/static/js/main.8bf690d4.js",
-    "static/media/BG.png": "/code-bears/static/media/BG.9c4ffd7377f43b64ad93.png",
-    "static/media/Moon.png": "/code-bears/static/media/Moon.9fb2f11289b56bf7cb9d.png",
-    "static/media/Macbook.png": "/code-bears/static/media/Macbook.bb2abc75f47c9f49e2c3.png",
-    "static/media/bearHero.png": "/code-bears/static/media/bearHero.78b88daa789d1c040d2a.png",
-    "static/media/sites.png": "/code-bears/static/media/sites.eba0198e4d26829c49e3.png",
+    "main.css": "/code-bears/static/css/main.8f5d19b7.css",
+    "main.js": "/code-bears/static/js/main.b86fea3a.js",
+    "static/media/backGround.png": "/code-bears/static/media/backGround.a3210fcd43f47454f32e.png",
+    "static/media/moonWithBear.png": "/code-bears/static/media/moonWithBear.2efbb2c74c2f0febf80e.png",
+    "static/media/mainBigBear.png": "/code-bears/static/media/mainBigBear.23c51ebd417b1473c6aa.png",
+    "static/media/laptop.png": "/code-bears/static/media/laptop.bbe526cfbfcdb520ddaf.png",
+    "static/media/slider.png": "/code-bears/static/media/slider.82005dbfec1f286a0783.png",
     "static/media/block.png": "/code-bears/static/media/block.3ffd2dbaebd59991769e.png",
-    "static/media/BigLogo.png": "/code-bears/static/media/BigLogo.e8eb3b04ea0692f88c08.png",
-    "static/media/TextMoon.png": "/code-bears/static/media/TextMoon.3dd9ab57bc9f25fe44ba.png",
     "index.html": "/code-bears/index.html",
-    "main.c0f3794f.css.map": "/code-bears/static/css/main.c0f3794f.css.map",
-    "main.8bf690d4.js.map": "/code-bears/static/js/main.8bf690d4.js.map"
+    "static/media/svgGmail.svg": "/code-bears/static/media/svgGmail.f756bccca38575aead5f84de74c07992.svg",
+    "static/media/svgInst.svg": "/code-bears/static/media/svgInst.7a952061f7a958a71a57e9a1f4eb6404.svg",
+    "static/media/svgCotact.svg": "/code-bears/static/media/svgCotact.24ecf49bed71db5f2aef32a63a284b7a.svg",
+    "main.8f5d19b7.css.map": "/code-bears/static/css/main.8f5d19b7.css.map",
+    "main.b86fea3a.js.map": "/code-bears/static/js/main.b86fea3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0f3794f.css",
-    "static/js/main.8bf690d4.js"
+    "static/css/main.8f5d19b7.css",
+    "static/js/main.b86fea3a.js"
   ]
 }
