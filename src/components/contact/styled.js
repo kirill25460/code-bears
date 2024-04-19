@@ -106,3 +106,7 @@ export const StyledText = styled.p`
 `;
 
 export const StyledSection = styled.section``;
+
+export const StyledSpan = styled.span`
+ color: #9365ff;
+`;

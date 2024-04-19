@@ -5,7 +5,7 @@ import Button from '../common/button';
 import { Container } from '../common/styled';
 import { StyledForm, 
     StyledField, 
-    StyledInputWraper, StyledLabel, Error, StyledTitleSpan, StyledTitle, StyledText, StyledSection } from './styled';
+    StyledInputWraper, StyledLabel, Error, StyledTitleSpan, StyledTitle, StyledText, StyledSection,StyledSpan } from './styled';
 
 const contactSchema = Yup.object().shape({
 
@@ -68,7 +68,7 @@ const Contact = () => {
                 </Formik>
                 <StyledText>
                     Or if you have any questions left <br />
-                    Be sure to <a href='#'>contact</a> us, we always love to hear you!
+                    Be sure to <StyledSpan>contact</StyledSpan> us, we always love to hear you!
                 </StyledText>
             </Container>
         </StyledSection>
