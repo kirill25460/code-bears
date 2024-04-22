@@ -17,10 +17,10 @@ width: 190px;
 
 export const rotateAnimation = keyframes`
     0% {
-        transform: perspective(1000px) rotateY(360deg) rotateX(12deg) ;
+        transform: perspective(1400px) rotateY(360deg) rotateX(12deg) ;
     }
     100% {
-        transform: perspective(1000px) rotateY(0deg) rotateX(15deg) ;
+        transform: perspective(1400px) rotateY(0deg) rotateX(12deg) ;
     }
 `;
 
@@ -28,12 +28,12 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 55vh;
+    min-height: 80vh;
     transform-style: preserve-3d;
     margin: 0 auto 400px;
     position: relative;
     @media (min-width: 489px) {
-        min-height: 50vh;
+        min-height: 60vh;
     }
     @media (min-width: 768px) {
         min-height: 50vh;
@@ -44,8 +44,8 @@ export const Section = styled.section`
 `;
 
 export const Moon = styled.div`
-    position: absolute;
-    top: 700px;
+    position: relative;
+    top: 550px;
     
     @media (min-width: 489px) {
         top: 450px
@@ -60,7 +60,7 @@ export const Circle = styled.div`
     animation: ${rotateAnimation} 20s linear infinite;
 
     position: absolute;
-    top: 125%;
+    top: 105%;
     @media (min-width: 489px) {
         top: 100%;
     }
