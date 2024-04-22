@@ -9,6 +9,7 @@ const AnimMoon = () => {
         <Section>
             <Moon>
                 <ImgMoon src={ImgMoonBear} alt='moon' />
+                <div className="moonGlow" />
             </Moon>
             <Circle>
                 {text.split('').map((char, index) => (

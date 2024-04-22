@@ -1,7 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
 export const ImgMoon = styled.img`
-
 width: 190px;
     @media (min-width: 489px) {
         width: 350px;
@@ -17,10 +16,10 @@ width: 190px;
 
 export const rotateAnimation = keyframes`
     0% {
-        transform: perspective(1400px) rotateY(360deg) rotateX(12deg) ;
+       transform: perspective(1200px) rotateY(360deg) rotateX(0deg) rotateZ(0) translateY(-30px) translateX(0px) ;
     }
     100% {
-        transform: perspective(1400px) rotateY(0deg) rotateX(12deg) ;
+        transform: perspective(1200px) rotateY(0deg) rotateX(0deg) rotateZ(0) translateY(-30px) translateX(0px) ;
     }
 `;
 
@@ -45,14 +44,26 @@ export const Section = styled.section`
 
 export const Moon = styled.div`
     position: relative;
-    top: 550px;
-    
+    top: 520px;
+       
     @media (min-width: 489px) {
         top: 450px
     }
     @media (min-width: 768px) {
         top: 200px
     }
+
+    .moonGlow {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.4) -10%, rgba(255, 255, 255, 0) 44%);
+
+    }
+    
 `;
 
 export const Circle = styled.div`
@@ -60,9 +71,9 @@ export const Circle = styled.div`
     animation: ${rotateAnimation} 20s linear infinite;
 
     position: absolute;
-    top: 120%;
+    top: 110%;
     @media (min-width: 489px) {
-        top: 130%;
+        top: 100%;
     }
     @media (min-width: 768px) {
         top: 50%;
