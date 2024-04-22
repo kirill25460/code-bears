@@ -71,7 +71,7 @@ export const Circle = styled.div`
     animation: ${rotateAnimation} 20s linear infinite;
 
     position: absolute;
-    top: 110%;
+    top: 115%;
     @media (min-width: 489px) {
         top: 100%;
     }
