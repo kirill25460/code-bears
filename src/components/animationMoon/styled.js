@@ -28,7 +28,7 @@ export const Section = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 70vh;
     transform-style: preserve-3d;
     margin: 0 auto 400px;
     position: relative;
@@ -60,7 +60,7 @@ export const Circle = styled.div`
     animation: ${rotateAnimation} 20s linear infinite;
 
     position: absolute;
-    top: 50%;
+    top: 110%;
     @media (min-width: 489px) {
         top: 130%;
     }
