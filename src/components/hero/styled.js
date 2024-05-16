@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import styled from 'styled-components';
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
 export const Arrow = styled(HiOutlineArrowNarrowRight)`
   height: 24px;
@@ -65,6 +65,9 @@ export const GreenWord = styled.span`
   color: #57ff9a;
   text-shadow: 0px 0px 7px rgba(87, 255, 154, 1), 0 0 2em rgba(87, 255, 154, 1),
     0 0 1.2em rgba(87, 255, 154, 1);
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
 
   @media (max-width: 445px) {
     text-shadow: none;
@@ -73,14 +76,20 @@ export const GreenWord = styled.span`
 
 export const PurpleWord = styled.span`
   color: #9365ff;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
 `;
 
 export const BoldWord = styled.span`
   font-weight: bold;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
 `;
 
 export const ImageText = styled.p`
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
   font-size: 8px;
@@ -90,7 +99,7 @@ export const ImageText = styled.p`
   color: #ffffff;
 
   @media (min-width: 768px) {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -101,7 +110,7 @@ export const ImageText = styled.p`
   }
 
   @media (min-width: 1045px) {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -119,7 +128,7 @@ export const FlexBox = styled.div`
 `;
 
 export const BookService = styled.p`
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 10px;
@@ -128,7 +137,7 @@ export const BookService = styled.p`
   color: #5b5b5b;
 
   @media (min-width: 768px) {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -139,7 +148,7 @@ export const BookService = styled.p`
   }
 
   @media (min-width: 1045px) {
-    font-family: "Inter";
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -205,7 +214,7 @@ export const HeroSubTitle = styled.p`
 
   @media (min-width: 1045px) {
     display: block;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 `;
 
@@ -304,7 +313,7 @@ export const TextButtonH2 = styled.h2`
 `;
 
 export const TextButtonP = styled.p`
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -348,14 +357,14 @@ export const SilderButton = styled.button`
   height: 45px;
   padding: 15px 20px;
   border-radius: 30px;
-  border: 1px solid #5197ff;
+  order: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   background-color: rgba(40, 40, 40, 1);
   color: #fff;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
 
   &:hover {
     background-color: #fff;
@@ -367,10 +376,10 @@ export const SilderButton = styled.button`
   }
 `;
 
+
 export const HrefButton = styled.a`
   color: #fff;
   &:hover {
-    background-color: #fff;
     color: rgba(40, 40, 40, 1);
     transition: 0.7s;
   }

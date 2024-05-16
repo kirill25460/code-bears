@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   HeroSection,
   HeroSubTitle,
@@ -27,23 +27,23 @@ import {
   Arrow,
   MainImgWork,
   SliderButtonWrapperMob,
-} from "./styled";
-import { Container } from "../../components/common/styled";
-import ImgBear from "../../images/main/mainBigBear.png";
-import ImgSlider from "../../images/main/slider.png";
-import Modal from "../common/modal/Modal";
-import bl from "../../images/main/block.png";
-import bg from "../../images/main/block_shadow.png";
+} from './styled';
+import { Container } from '../../components/common/styled';
+import ImgBear from '../../images/main/mainBigBear.png';
+import ImgSlider from '../../images/main/slider.png';
+import Modal from '../common/modal/Modal';
+import bl from '../../images/main/block.png';
+import bg from '../../images/main/block_shadow.png';
 
 const Hero = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const handleModalOpen = () => {
     setModalOpen(true);
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = 'hidden';
   };
   const handleModalClose = () => {
     setModalOpen(false);
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = 'auto';
   };
   return (
     <HeroSection>
@@ -51,7 +51,7 @@ const Hero = () => {
         <TitleWrapper>
           <HeroTitle>
             <PurpleWord>Turning</PurpleWord>
-            <GreenWord> Ideas</GreenWord> <PurpleWord>into Digital</PurpleWord>{" "}
+            <GreenWord> Ideas</GreenWord> <PurpleWord>into Digital</PurpleWord>{' '}
             <GreenWord>Realities.</GreenWord>
           </HeroTitle>
 
@@ -97,7 +97,9 @@ const Hero = () => {
             <SliderButtonWrapper>
               <SilderButton onClick={handleModalOpen}>Contacts</SilderButton>
               <SilderButton>
-                <HrefButton href="#contact">Start project</HrefButton>
+                <HrefButton href="#contact">
+                  <SilderButton>Start project</SilderButton>
+                </HrefButton>
               </SilderButton>
             </SliderButtonWrapper>
             {isModalOpen && <Modal onClick={handleModalClose} />}

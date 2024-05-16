@@ -57,8 +57,6 @@ export const Moon = styled.div`
         position: absolute;
         top: -50%;
         left: -50%;
-        width: 200%;
-        height: 200%;
         border-radius: 50%;
         background: radial-gradient(circle, rgba(255, 255, 255, 0.4) -10%, rgba(255, 255, 255, 0) 44%);
 
