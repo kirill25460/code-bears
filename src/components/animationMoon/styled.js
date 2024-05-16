@@ -73,10 +73,10 @@ export const Circle = styled.div`
     position: absolute;
     top: 120%;
     @media (min-width: 489px) {
-        top: 100%;
+        top: 110%;
     }
     @media (min-width: 768px) {
-        top: 50%;
+        top: 60%;
     }
     @media (min-width: 1045px) {
         top: 60%;
