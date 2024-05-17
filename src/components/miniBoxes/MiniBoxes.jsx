@@ -5,11 +5,13 @@ import { Container } from '../common/styled';
 
 const MiniBoxes = () => {
   return (
-        <Container>
-            <Laptop /> 
-            <Boxes/>
-        </Container>  
-  )
-}
+    <>
+      <Laptop />
+      <Container>
+        <Boxes />
+      </Container>
+    </>
+  );
+};
 
-export default MiniBoxes
+export default MiniBoxes;

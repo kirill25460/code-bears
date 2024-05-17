@@ -165,9 +165,9 @@ export const Button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
     width: 38px;
     height: 20px;
+    cursor: pointer;
 
     background: #282829;
     box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -181,6 +181,7 @@ export const Button = styled.button`
     box-sizing: border-box;
     width: 58px;
     height: 30px;
+    cursor: pointer;
 
     background: #282829;
     box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -376,7 +377,6 @@ export const SilderButton = styled.button`
   }
 `;
 
-
 export const HrefButton = styled.a`
   color: #fff;
   &:hover {
@@ -391,7 +391,7 @@ export const MainImgWork = styled.img`
     width: 275px;
   }
   @media (min-width: 1024px) {
-    width: 510px;
+    width: 500px;
   }
   @media (min-width: 1440px) {
     width: 555px;
