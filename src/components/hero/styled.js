@@ -385,8 +385,52 @@ export const HrefButton = styled.a`
   }
 `;
 
+export const MainImgWrap = styled.div`
+
+`;
+
 export const MainImgWork = styled.img`
   width: 250px;
+  position:absolute;
+  @media (min-width: 744px) {
+    width: 275px;
+  }
+  @media (min-width: 1024px) {
+    width: 500px;
+  }
+  @media (min-width: 1440px) {
+    width: 555px;
+  }
+`;
+export const MainImgWork2 = styled.img`
+  width: 250px;
+  position:absolute;
+  @media (min-width: 744px) {
+    width: 275px;
+  }
+  @media (min-width: 1024px) {
+    width: 500px;
+  }
+  @media (min-width: 1440px) {
+    width: 555px;
+  }
+`;
+export const MainImgWork3 = styled.img`
+  width: 250px;
+  position:absolute;
+  @media (min-width: 744px) {
+    width: 275px;
+  }
+  @media (min-width: 1024px) {
+    width: 500px;
+  }
+  @media (min-width: 1440px) {
+    width: 555px;
+  }
+`;
+export const MainImgWork4 = styled.img`
+  width: 250px;
+  position:absolute;
   @media (min-width: 744px) {
     width: 275px;
   }

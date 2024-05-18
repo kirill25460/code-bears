@@ -27,6 +27,9 @@ import {
   Arrow,
   MainImgWork,
   SliderButtonWrapperMob,
+  MainImgWork4,
+  MainImgWork3,
+  MainImgWork2,
 } from './styled';
 import { Container } from '../../components/common/styled';
 import ImgBear from '../../images/main/mainBigBear.png';
@@ -104,7 +107,13 @@ const Hero = () => {
             </SliderButtonWrapper>
             {isModalOpen && <Modal onClick={handleModalClose} />}
           </TextButtonWrapper>
+          <div>
           <MainImgWork src={ImgSlider} alt="slider" />
+          <MainImgWork2 src={ImgSlider} alt="slider" />
+          <MainImgWork3 src={ImgSlider} alt="slider" />
+          <MainImgWork4 src={ImgSlider} alt="slider" />
+          </div>
+         
           <SliderButtonWrapperMob>
             <SilderButton onClick={handleModalOpen}>Contacts</SilderButton>
             <SilderButton>
