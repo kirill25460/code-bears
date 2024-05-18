@@ -283,7 +283,7 @@ export const OverlayContent = styled.div`
 export const SliderWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  position: relative;
   justify-content: center;
   @media (min-width: 768px) {
     flex-direction: row;
@@ -386,12 +386,29 @@ export const HrefButton = styled.a`
 `;
 
 export const MainImgWrap = styled.div`
-
+  position: relative;
+  &:hover img {
+    &:nth-child(1) {
+      transform: translate(200px, 200px);
+    }
+    &:nth-child(2) {
+      transform: translate(-200px, -200px);
+    }
+    &:nth-child(3) {
+      transform: translate(200px, -200px);
+    }
+    &:nth-child(4) {
+      transform: translate(-200px, 200px);
+    }
+ 
+  }
 `;
 
 export const MainImgWork = styled.img`
   width: 250px;
   position:absolute;
+  transition: transform 0.3s ease;
+  z-index:15;
   @media (min-width: 744px) {
     width: 275px;
   }
@@ -402,42 +419,19 @@ export const MainImgWork = styled.img`
     width: 555px;
   }
 `;
-export const MainImgWork2 = styled.img`
-  width: 250px;
-  position:absolute;
-  @media (min-width: 744px) {
-    width: 275px;
-  }
-  @media (min-width: 1024px) {
-    width: 500px;
-  }
-  @media (min-width: 1440px) {
-    width: 555px;
-  }
+
+export const MainImgWork2 = styled(MainImgWork)`
+  top: 15px;
 `;
-export const MainImgWork3 = styled.img`
-  width: 250px;
-  position:absolute;
-  @media (min-width: 744px) {
-    width: 275px;
-  }
-  @media (min-width: 1024px) {
-    width: 500px;
-  }
-  @media (min-width: 1440px) {
-    width: 555px;
-  }
+
+export const MainImgWork3 = styled(MainImgWork)`
+  top: -15px;
 `;
-export const MainImgWork4 = styled.img`
-  width: 250px;
-  position:absolute;
-  @media (min-width: 744px) {
-    width: 275px;
-  }
-  @media (min-width: 1024px) {
-    width: 500px;
-  }
-  @media (min-width: 1440px) {
-    width: 555px;
-  }
+
+export const MainImgWork4 = styled(MainImgWork)`
+  left: 15px;
+`;
+
+export const MainImgWork5 = styled(MainImgWork)`
+  left: -15px;
 `;
