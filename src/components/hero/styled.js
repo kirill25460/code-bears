@@ -285,8 +285,10 @@ export const SliderWrapper = styled.div`
   flex-direction: column;
   position: relative;
   justify-content: center;
+  align-items: center;
   @media (min-width: 768px) {
     flex-direction: row;
+    justify-content: space-around;
   }
   @media (min-width: 1024px) {
     justify-content: space-around;
@@ -387,18 +389,31 @@ export const HrefButton = styled.a`
 
 export const MainImgWrap = styled.div`
   position: relative;
+  width:240px;
+  height:250px;
+  @media (min-width: 744px) {
+    width: 275px;
+  }
+  @media (min-width: 1024px) {
+    width: 500px;
+    height:450px;
+  }
+  @media (min-width: 1440px) {
+    width: 555px;
+    height:500px;
+  }
   &:hover img {
     &:nth-child(1) {
-      transform: translate(200px, 200px);
+      transform: translate(200px, 210px);
     }
     &:nth-child(2) {
-      transform: translate(-200px, -200px);
+      transform: translate(-230px, -230px);
     }
     &:nth-child(3) {
       transform: translate(200px, -200px);
     }
     &:nth-child(4) {
-      transform: translate(-200px, 200px);
+      transform: translate(-250px, 210px);
     }
  
   }
