@@ -29,7 +29,7 @@ export const Section = styled.section`
   align-items: center;
   min-height: 70vh;
   transform-style: preserve-3d;
-  margin: 0 auto 400px;
+  margin: 0 auto 250px;
   position: relative;
   @media (min-width: 489px) {
     min-height: 60vh;

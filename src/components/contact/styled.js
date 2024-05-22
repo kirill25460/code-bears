@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Form, Field } from "formik";
+import styled from 'styled-components';
+import { Form, Field } from 'formik';
 
 export const StyledForm = styled(Form)`
   display: flex;
@@ -33,7 +33,7 @@ export const StyledLabel = styled.label`
   position: relative;
   width: 100%;
 
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -62,7 +62,7 @@ export const StyledTitle = styled.h4`
 
   margin-bottom: 5%;
 
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -88,9 +88,9 @@ export const StyledText = styled.p`
 
   font-size: 15px;
 
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -100,7 +100,7 @@ export const StyledText = styled.p`
   color: #9f9f9f;
 
   @media (min-width: 768px) {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
     font-size: 15px;
   }
 `;
@@ -108,5 +108,19 @@ export const StyledText = styled.p`
 export const StyledSection = styled.section``;
 
 export const StyledSpan = styled.span`
- color: #9365ff;
+  color: #9365ff;
+`;
+
+export const ColorConteiner = styled.div`
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #111112 30%);
+
+  @media (min-width: 360px) {
+    padding-top: 150px;
+  }
+  @media (min-width: 489px) {
+    padding-top: 180px;
+  }
+  @media (min-width: 1045px) {
+    padding-top: 30px;
+  }
 `;

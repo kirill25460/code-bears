@@ -111,3 +111,9 @@ export const FooterRoutCardLink = styled.a`
 export const FooterRoutCardSpan = styled.span`
   color: #fff;
 `;
+
+
+export const ImgBearFooter = styled.img`
+  width: 36px;
+  height: 40px;
+`;

@@ -1,9 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { Container } from "../common/styled";
-import { configFooterContacts, configFooterRout } from "./configFooter";
-import FooterContactCard from "./FooterContactCard";
-import FooterRoutCard from "./FooterRoutCard";
-import { StyledFooter, FooterNav, FooterP, FooterContactCardUl, FooterRoutCardUl } from "./styled";
+import React, { useState, useEffect } from 'react';
+import { Container } from '../common/styled';
+import { configFooterContacts, configFooterRout } from './configFooter';
+import FooterContactCard from './FooterContactCard';
+import FooterRoutCard from './FooterRoutCard';
+import {
+  StyledFooter,
+  FooterNav,
+  FooterP,
+  FooterContactCardUl,
+  FooterRoutCardUl,
+  ImgBearFooter,
+} from './styled';
+import BearPng from '../../images/header/BearPng.png';
 
 const Footer = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
@@ -13,10 +21,10 @@ const Footer = () => {
       setIsLargeScreen(window.innerWidth >= 768);
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -27,15 +35,15 @@ const Footer = () => {
           <Container>
             <FooterNav>
               <FooterContactCardUl>
-                {configFooterContacts.map((contact) => (
+                {configFooterContacts.map(contact => (
                   <FooterContactCard key={contact.id} {...contact} />
                 ))}
               </FooterContactCardUl>
 
-              <FooterP>CODEBEAR.</FooterP>
+              <ImgBearFooter src={BearPng}></ImgBearFooter>
 
               <ul>
-                {configFooterRout.map((rout) => (
+                {configFooterRout.map(rout => (
                   <FooterRoutCard key={rout.id} {...rout} />
                 ))}
               </ul>
@@ -44,18 +52,18 @@ const Footer = () => {
         </StyledFooter>
       ) : (
         <StyledFooter>
-          {" "}
+          {' '}
           <Container>
             <FooterNav>
-              <FooterP>CODEBEAR.</FooterP>
+              <ImgBearFooter src={BearPng}></ImgBearFooter>
               <FooterContactCardUl>
-                {configFooterContacts.map((contact) => (
+                {configFooterContacts.map(contact => (
                   <FooterContactCard key={contact.id} {...contact} />
                 ))}
-              </FooterContactCardUl> 
+              </FooterContactCardUl>
 
               <FooterRoutCardUl>
-                {configFooterRout.map((rout) => (
+                {configFooterRout.map(rout => (
                   <FooterRoutCard key={rout.id} {...rout} />
                 ))}
               </FooterRoutCardUl>
