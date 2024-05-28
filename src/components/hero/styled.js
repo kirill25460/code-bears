@@ -453,7 +453,7 @@ export const MainImgWork = styled.img`
   width: 250px;
   position:absolute;
   transition: transform 0.3s ease;
-  z-index:5;
+ 
 
   @media (min-width: 744px) {
     width: 275px;
