@@ -94,7 +94,42 @@ export const Span = styled.span`
   padding: 2px 1px;
   transform: rotateY(calc(${props => props.index} * calc(360deg / 40)))
     translateZ(130px);
-
+    ${props => props.index === 16 && `
+       padding: 2px 13px;
+  `}
+     ${props => props.index === 33 && `
+       padding: 2px 13px;
+  `}
+       ${props => props.index === 27 && `
+       padding: 2px 8px;
+  `}
+       ${props => props.index === 28 && `
+       padding: 2px 8px;
+  `}
+         ${props => props.index === 8 && `
+       padding: 2px 8px;
+  `}
+          ${props => props.index === 9 && `
+       padding: 2px 11px;
+  `}
+          ${props => props.index === 10 && `
+       padding: 2px 11px;
+  `}
+           ${props => props.index === 34 && `
+       padding: 2px 0px;
+  `}
+           ${props => props.index === 35 && `
+       padding: 2px 6px;
+  `}
+             ${props => props.index === 36 && `
+       padding: 2px 6px;
+  `}
+               ${props => props.index === 13 && `
+       padding: 2px 0px;
+  `}
+                 ${props => props.index === 14 && `
+       padding: 2px 6px;
+  `}
   @media (min-width: 489px) {
     font-size: 3em;
     transform: rotateY(calc(${props => props.index} * calc(360deg / 40)))
