@@ -95,7 +95,7 @@ export const Span = styled.span`
   transform: rotateY(calc(${props => props.index} * calc(360deg / 40)))
     translateZ(130px);
     ${props => props.index === 16 && `
-       padding: 2px 13px;
+       padding: 2px 15px;
   `}
      ${props => props.index === 33 && `
        padding: 2px 13px;
