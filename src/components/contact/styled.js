@@ -9,7 +9,7 @@ export const StyledForm = styled(Form)`
   max-width: 400px;
   margin: 0 auto;
 
-  margin-bottom: 2%;
+
 `;
 
 export const StyledField = styled(Field)`
@@ -18,9 +18,30 @@ export const StyledField = styled(Field)`
   border-bottom: 1px solid #444;
   height: 20px;
   width: 100%;
-
   color: #fff;
+  &:focus {
+    outline: none;
+    border-color: none; 
+    box-shadow: 0 3px 5px rgba(81, 151, 255, 0.5); 
+  }
 `;
+
+export const StyledFieldMess = styled(Field)`
+  background: transparent;
+  min-height: 30px;
+  border: none;
+  border-bottom: 1px solid #444;
+  resize: none;
+  overflow-y: hidden;
+  width: 100%;
+  color: #fff;
+  &:focus {
+    outline: none;
+    border-color: none; 
+    box-shadow: 0 3px 5px rgba(81, 151, 255, 0.5); 
+  }
+`;
+
 export const StyledInputWraper = styled.div`
   display: flex;
   gap: 15px;
@@ -123,4 +144,14 @@ export const ColorConteiner = styled.div`
   @media (min-width: 1045px) {
     padding-top: 30px;
   }
+`;
+
+
+export const InfoText = styled.p`
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 25px;
 `;

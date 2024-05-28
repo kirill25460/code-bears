@@ -15,6 +15,8 @@ import {
   StyledSection,
   StyledSpan,
   ColorConteiner,
+  InfoText,
+  StyledFieldMess,
 } from './styled';
 
 const contactSchema = Yup.object().shape({
@@ -66,13 +68,15 @@ const Contact = () => {
                 </StyledInputWraper>
                 <StyledLabel>
                   Message
-                  <StyledField name="message" />
+                  <StyledFieldMess  as="textarea" name="message" />
                  
                 </StyledLabel>
                 <Button id="contact" />
               </StyledForm>
             )}
+           
           </Formik>
+          <InfoText>* - Required fields</InfoText>
           <StyledText>
             Or if you have any questions left <br />
             Be sure to <StyledSpan>contact</StyledSpan> us, we always love to

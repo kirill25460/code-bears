@@ -95,7 +95,9 @@ export const FooterContactCardUl = styled.ul`
     display: unset;
   }
 `;
-
+export const FooterInfoCardUl = styled.ul`
+width:221px;
+`;
 export const FooterRoutCardUl = styled.ul`
   margin-top: 40px;
 

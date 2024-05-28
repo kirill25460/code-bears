@@ -10,6 +10,7 @@ import {
   FooterContactCardUl,
   FooterRoutCardUl,
   ImgBearFooter,
+  FooterInfoCardUl,
 } from './styled';
 import BearPng from '../../images/header/BearPng.png';
 
@@ -42,11 +43,11 @@ const Footer = () => {
 
               <ImgBearFooter src={BearPng}></ImgBearFooter>
 
-              <ul>
+              <FooterInfoCardUl>
                 {configFooterRout.map(rout => (
                   <FooterRoutCard key={rout.id} {...rout} />
                 ))}
-              </ul>
+              </FooterInfoCardUl>
             </FooterNav>
           </Container>
         </StyledFooter>
