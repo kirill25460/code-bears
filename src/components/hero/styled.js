@@ -353,11 +353,14 @@ export const SliderButtonWrapperMob = styled.div`
 `;
 
 export const SilderButton = styled.button`
+border: 1px solid #D4D2E3;
+font-style: normal;
+font-size: 12px;
+text-align: center;
   font-weight: 400;
-  font-size: 12px;
   line-height: 18px;
-  width: 120px;
-  height: 45px;
+  width: 155px;
+  height: 54px;
   padding: 15px 20px;
   border-radius: 30px;
   order: 0;
@@ -365,18 +368,44 @@ export const SilderButton = styled.button`
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: rgba(40, 40, 40, 1);
-  color: #fff;
+  background: linear-gradient(99.29deg, #FFF 100%);
+  color: #5D5A88;
   font-family: 'DM Sans', sans-serif;
-
   &:hover {
-    background-color: #fff;
-    color: rgba(40, 40, 40, 1);
+    background-color: #282828;
+    color: #FFFFFF;
     transition: 0.7s;
   }
   @media (min-width: 744px) {
-    font-size: 12px;
+    font-size: 16px;
   }
+`;
+
+export const ContactButton = styled.button`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 120px;
+height: 54px;
+background: linear-gradient(99.29deg, #282828 7.44%, #2D2D2D 96.69%);
+border-radius: 30px;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 18px;
+text-align: center;
+color: #FFFFFF;
+border: 1px solid #282828;
+
+
+&:hover {
+    background: #FFFFFF;
+    color: #282828;
+    transition: 0.7s;
+
+  }
+
 `;
 
 export const HrefButton = styled.a`
@@ -391,6 +420,7 @@ export const MainImgWrap = styled.div`
   position: relative;
   width:240px;
   height:250px;
+ 
   @media (min-width: 744px) {
     width: 275px;
   }
@@ -399,7 +429,7 @@ export const MainImgWrap = styled.div`
     height:450px;
   }
   @media (min-width: 1440px) {
-    width: 555px;
+    width: 550px;
     height:500px;
   }
   &:hover img {
@@ -423,7 +453,8 @@ export const MainImgWork = styled.img`
   width: 250px;
   position:absolute;
   transition: transform 0.3s ease;
-  z-index:15;
+  z-index:5;
+
   @media (min-width: 744px) {
     width: 275px;
   }
@@ -431,7 +462,7 @@ export const MainImgWork = styled.img`
     width: 500px;
   }
   @media (min-width: 1440px) {
-    width: 555px;
+    width: 550px;
   }
 `;
 

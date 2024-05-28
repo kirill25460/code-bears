@@ -54,26 +54,20 @@ const Contact = () => {
               <StyledForm>
                 <StyledInputWraper>
                   <StyledLabel>
-                    Name
-                    <StyledField name="name" />
-                    {errors.name && touched.name ? (
-                      <Error>{errors.name}</Error>
-                    ) : null}
+                    Name*
+                    <StyledField name="name" required />
+                    
                   </StyledLabel>
                   <StyledLabel>
-                    Email
-                    <StyledField name="email" type="email" />
-                    {errors.email && touched.email ? (
-                      <Error>{errors.email}</Error>
-                    ) : null}
+                    Email*
+                    <StyledField name="email" type="email" required />
+                   
                   </StyledLabel>
                 </StyledInputWraper>
                 <StyledLabel>
                   Message
                   <StyledField name="message" />
-                  {errors.message && touched.message ? (
-                    <Error>{errors.message}</Error>
-                  ) : null}
+                 
                 </StyledLabel>
                 <Button id="contact" />
               </StyledForm>

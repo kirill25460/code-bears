@@ -32,6 +32,7 @@ import {
   MainImgWork2,
   MainImgWrap,
   MainImgWork5,
+  ContactButton,
 } from './styled';
 import { Container } from '../../components/common/styled';
 import ImgBear from '../../images/main/mainBigBear.png';
@@ -100,7 +101,7 @@ const Hero = () => {
               speed, customizability and comfort.
             </TextButtonP>
             <SliderButtonWrapper>
-              <SilderButton onClick={handleModalOpen}>Contacts</SilderButton>
+              <ContactButton onClick={handleModalOpen}>Contacts</ContactButton>
               <SilderButton>
                 <HrefButton href="#contact">
                   <SilderButton>Start project</SilderButton>
