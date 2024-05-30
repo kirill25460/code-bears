@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const ImgMoon = styled.img`
   width: 190px;
-  filter:drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  filter:drop-shadow(0 0 20px rgba(255, 255, 255, 0.5));
   @media (min-width: 489px) {
     width: 350px;
   }
