@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const ImgMoon = styled.img`
   width: 190px;
-
+  filter:drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
   @media (min-width: 489px) {
     width: 350px;
   }
@@ -91,6 +91,7 @@ export const Span = styled.span`
   font-size: 1.5em;
   transform-origin: center;
   transform-style: preserve-3d;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   padding: 2px 1px;
   transform: rotateY(calc(${props => props.index} * calc(360deg / 40)))
     translateZ(130px);
