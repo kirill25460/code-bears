@@ -67,7 +67,7 @@ const Contact = () => {
                   </StyledLabel>
                 </StyledInputWraper>
                 <StyledLabel>
-                  Message
+                  Message*
                   <StyledFieldMess  as="textarea" name="message" />
                  
                 </StyledLabel>

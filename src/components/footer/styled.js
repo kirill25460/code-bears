@@ -116,6 +116,6 @@ export const FooterRoutCardSpan = styled.span`
 
 
 export const ImgBearFooter = styled.img`
-  width: 36px;
-  height: 40px;
+  width: 46px;
+  height: 50px;
 `;

@@ -151,7 +151,7 @@ export const InfoText = styled.p`
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 15px;
   text-align: center;
   margin-bottom: 25px;
 `;
