@@ -18,6 +18,9 @@ import {
   Image,
   ImageSecondBlock,
   ListSecondBlock,
+  TitleWrapperProdList,
+  StyledProductList,
+  StyledSection,
 } from './styled';
 import firstImg from '../../images/main/Shape101.png';
 import secondImg from '../../images/main/Shape521.png';
@@ -25,7 +28,10 @@ import thirdImg from '../../images/main/Shape561.png';
 
 const Product = () => {
   return (
-    <>
+    <StyledSection>
+      <TitleWrapperProdList>
+        <StyledProductList>Products List</StyledProductList>
+     
       <StyledItem id="services">
         <ListBlock>
           <MainTextBlock>Development.</MainTextBlock>
@@ -136,7 +142,8 @@ const Product = () => {
           <Image src={thirdImg}></Image>
         </ImageBlock>
       </StyledItem>
-    </>
+      </TitleWrapperProdList>
+    </StyledSection>
   );
 };
 

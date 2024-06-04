@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact from '../contact'
 import { StyledMain } from './styled'
-import ProductList from '../productList'
+import Product from '../productList/Product'
 import MiniBoxes from '../miniBoxes'
 import Moon from '../animationMoon/Moon'
 import Hero from '../hero'
@@ -14,7 +14,7 @@ const Main = () => {
     <StyledMain>
       <Header />
       <Hero/>
-      <ProductList/>
+      <Product/>
       <MiniBoxes/>
       <Moon />
       <Contact />

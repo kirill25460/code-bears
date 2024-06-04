@@ -17,6 +17,7 @@ export const StyledSection = styled.section`
 export const TitleWrapperProdList = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -27,12 +28,17 @@ export const TitleWrapperProdList = styled.div`
   }
 `;
 
-export const StyledH2 = styled.h2`
+export const StyledProductList = styled.h2`
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 20px;
   line-height: 66px;
+  @media (min-width: 768px) {
+    font-size: 56px;
+  }
+
+
 `;
 
 export const StyledP = styled.p`
@@ -43,11 +49,15 @@ export const StyledList = styled.ul`
   margin-top: 50px;
 `;
 
-export const StyledItem = styled.li`
+export const StyledItem = styled.div`
   display: flex;
-
+  flex-direction: column;
   &:not(:first-child) {
     margin-top: 100px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 `;
 
@@ -78,7 +88,10 @@ export const StyledCross = styled(RxCrossCircled)`
 `;
 
 export const ListBlock = styled.div`
+ @media (min-width: 768px) {
   margin-right: 62px;
+  }
+
 `;
 
 export const ListSecondBlock = styled.div``;
@@ -107,13 +120,20 @@ export const ImageSecondBlock = styled.div`
 `;
 
 export const FlexList = styled.div`
-  display: flex;
+  
+  @media (min-width: 768px) {
+    display: flex;
+  
+  }
 `;
 export const FirstListSection = styled.ul`
   margin-top: 30px;
   width: 261px;
-  height: 400px;
+  @media (min-width: 768px) {
+    height: 400px;
   margin-right: 30px;
+  }
+
 `;
 
 export const SecondListSection = styled.ul`
@@ -142,21 +162,37 @@ export const ItemList = styled.li`
 export const NumberBlock = styled.p`
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: 700;
-  font-size: 515px;
-  line-height: 86.5%;
+  font-size: 267px;
+line-height: 230.96px;
+ 
+ 
   letter-spacing: -0.02em;
 
   color: #ffffff;
 
   mix-blend-mode: soft-light;
   opacity: 0.47;
+  @media (min-width: 768px) {
+    font-weight: 700;
+  font-size: 515px;
+  line-height: 86.5%;
+  }
+
+
+
+
+
 `;
 
 export const Image = styled.img`
-  width: 430px;
-  height: 430px;
+  width: 269px;
+  height: 269px;
   position: absolute;
   top: 0;
   left: 50px;
+
+  @media (min-width: 768px) {
+    width: 430px;
+  height: 430px;
+  }
 `;
