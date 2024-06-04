@@ -21,6 +21,8 @@ import {
   TitleWrapperProdList,
   StyledProductList,
   StyledSection,
+  StyledBr,
+  ImageBlockMob,
 } from './styled';
 import firstImg from '../../images/main/Shape101.png';
 import secondImg from '../../images/main/Shape521.png';
@@ -35,6 +37,10 @@ const Product = () => {
       <StyledItem id="services">
         <ListBlock>
           <MainTextBlock>Development.</MainTextBlock>
+          <ImageBlockMob>
+          <NumberBlock>01</NumberBlock>
+          <Image src={firstImg}></Image>
+        </ImageBlockMob>
           <FlexList>
             <FirstListSection>
               <ItemList>PWA (Progressive Web Apps)</ItemList>
@@ -48,7 +54,7 @@ const Product = () => {
             </FirstListSection>
             <SecondListSection>
               <ItemList>
-                Системы <br />
+                Системы <StyledBr />
                 документооборота
               </ItemList>
               <ItemList>ERP и CRM системы</ItemList>
@@ -56,7 +62,7 @@ const Product = () => {
               <ItemList>Интернет-магазины </ItemList>
               <ItemList>Одностраничные сайты (landing page)</ItemList>
               <ItemList>
-                Мобильные <br />
+                Мобильные <StyledBr />
                 приложения
               </ItemList>
               <ItemList>ИИ</ItemList>
@@ -75,6 +81,10 @@ const Product = () => {
         </ImageSecondBlock>
         <ListSecondBlock>
           <MainTextBlock>Design.</MainTextBlock>
+          <ImageBlockMob>
+          <NumberBlock>02</NumberBlock>
+          <Image src={secondImg}></Image>
+        </ImageBlockMob>
           <FlexList>
             <FirstListSection>
               <ItemList>Рекламные Банера</ItemList>
@@ -106,6 +116,10 @@ const Product = () => {
       <StyledItem id="services">
         <ListBlock>
           <MainTextBlock>Marketing.</MainTextBlock>
+          <ImageBlockMob>
+          <NumberBlock>03</NumberBlock>
+          <Image src={thirdImg}></Image>
+        </ImageBlockMob>
           <FlexList>
             <FirstListSection>
               <ItemList>

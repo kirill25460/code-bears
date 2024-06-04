@@ -88,6 +88,9 @@ export const StyledCross = styled(RxCrossCircled)`
 `;
 
 export const ListBlock = styled.div`
+display: flex;
+    flex-direction: column;
+    align-items: center;
  @media (min-width: 768px) {
   margin-right: 62px;
   }
@@ -111,12 +114,29 @@ export const MainTextBlock = styled.h3`
 `;
 
 export const ImageBlock = styled.div`
-  position: relative;
+display:none;
+  @media (min-width: 768px) {
+    display: block;
+    position: relative;
+  }
 `;
+export const ImageBlockMob = styled.div`
 
+position: relative;
+  @media (min-width: 768px) {
+    display:none;
+   
+  }
+`;
 export const ImageSecondBlock = styled.div`
-  position: relative;
-  margin-right: 62px;
+display:none;
+  @media (min-width: 768px) {
+    display: block;
+    position: relative;
+    margin-right: 62px;
+  }
+
+ 
 `;
 
 export const FlexList = styled.div`
@@ -129,6 +149,7 @@ export const FlexList = styled.div`
 export const FirstListSection = styled.ul`
   margin-top: 30px;
   width: 261px;
+  text-align: center;
   @media (min-width: 768px) {
     height: 400px;
   margin-right: 30px;
@@ -137,26 +158,44 @@ export const FirstListSection = styled.ul`
 `;
 
 export const SecondListSection = styled.ul`
-  margin-top: 30px;
+ margin-top: 20px;
   width: 261px;
-  height: 400px;
+
+  text-align: center;
+  @media (min-width: 768px) {
+    height: 400px;
+    margin-top: 30px;
+  }
+`;
+
+export const StyledBr = styled.br`
+display: none;
+@media (min-width: 768px) {
+  display:inline-block;
+  }
 `;
 
 export const ItemList = styled.li`
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 14px;
+line-height: 14.56px;
   line-height: 104%;
   letter-spacing: -0.02em;
-
   color: #ffffff;
-
   text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.68);
 
   &:not(:first-child) {
     margin-top: 20px;
   }
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
+
+
+
+
 `;
 
 export const NumberBlock = styled.p`
@@ -189,10 +228,11 @@ export const Image = styled.img`
   height: 269px;
   position: absolute;
   top: 0;
-  left: 50px;
+ 
 
   @media (min-width: 768px) {
     width: 430px;
   height: 430px;
+  left: 50px;
   }
 `;
