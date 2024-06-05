@@ -18,6 +18,7 @@ import {
   StyledSection,
   StyledBr,
   ImageBlockMob,
+  ListBlock03,
 } from './styled';
 import firstImg from '../../images/main/Shape101.png';
 import secondImg from '../../images/main/Shape521.png';
@@ -108,7 +109,7 @@ const Product = () => {
         </ListSecondBlock>
       </StyledItem>
       <StyledItem id="services">
-        <ListBlock>
+        <ListBlock03>
           <MainTextBlock>Marketing.</MainTextBlock>
           <ImageBlockMob>
           <NumberBlock>03</NumberBlock>
@@ -144,7 +145,7 @@ const Product = () => {
               <ItemList>Контент план</ItemList>
             </SecondListSection>
           </FlexList>
-        </ListBlock>
+        </ListBlock03>
         <ImageBlock>
           <NumberBlock>03</NumberBlock>
           <Image src={thirdImg}></Image>
