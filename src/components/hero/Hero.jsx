@@ -121,8 +121,10 @@ const Hero = () => {
           <SliderButtonWrapperMob>
             <SilderButton onClick={handleModalOpen}>Contacts</SilderButton>
             <SilderButton>
-              <HrefButton href="#contact">Start project</HrefButton>
-            </SilderButton>
+                <HrefButton href="#contact">
+                  <SilderButton>Start project</SilderButton>
+                </HrefButton>
+              </SilderButton>
           </SliderButtonWrapperMob>
         </SliderWrapper>
       </Container>

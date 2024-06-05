@@ -24,7 +24,7 @@ export const TitleWrapperProdList = styled.div`
     align-items: center;
   }
   @media (min-width: 1024px) {
-    align-items: normal;
+   
   }
 `;
 
@@ -37,8 +37,9 @@ export const StyledProductList = styled.h2`
   @media (min-width: 768px) {
     font-size: 56px;
   }
-
-
+  @media (min-width: 1024px) {
+   margin-right: 790px;
+  }
 `;
 
 export const StyledP = styled.p`
@@ -88,16 +89,24 @@ export const StyledCross = styled(RxCrossCircled)`
 `;
 
 export const ListBlock = styled.div`
-display: flex;
-    flex-direction: column;
-    align-items: center;
- @media (min-width: 768px) {
-  margin-right: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+    margin-right: 62px;
+    align-items: normal;
   }
-
 `;
 
-export const ListSecondBlock = styled.div``;
+export const ListSecondBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+
+    align-items: normal;
+  }
+`;
 
 export const MainTextBlock = styled.h3`
   font-family: 'DM Sans';
@@ -114,36 +123,30 @@ export const MainTextBlock = styled.h3`
 `;
 
 export const ImageBlock = styled.div`
-display:none;
+  display: none;
   @media (min-width: 768px) {
     display: block;
     position: relative;
   }
 `;
 export const ImageBlockMob = styled.div`
-
-position: relative;
+  position: relative;
   @media (min-width: 768px) {
-    display:none;
-   
+    display: none;
   }
 `;
 export const ImageSecondBlock = styled.div`
-display:none;
+  display: none;
   @media (min-width: 768px) {
     display: block;
     position: relative;
     margin-right: 62px;
   }
-
- 
 `;
 
 export const FlexList = styled.div`
-  
   @media (min-width: 768px) {
     display: flex;
-  
   }
 `;
 export const FirstListSection = styled.ul`
@@ -152,13 +155,12 @@ export const FirstListSection = styled.ul`
   text-align: center;
   @media (min-width: 768px) {
     height: 400px;
-  margin-right: 30px;
+    margin-right: 30px;
   }
-
 `;
 
 export const SecondListSection = styled.ul`
- margin-top: 20px;
+  margin-top: 20px;
   width: 261px;
 
   text-align: center;
@@ -169,9 +171,9 @@ export const SecondListSection = styled.ul`
 `;
 
 export const StyledBr = styled.br`
-display: none;
-@media (min-width: 768px) {
-  display:inline-block;
+  display: none;
+  @media (min-width: 768px) {
+    display: inline-block;
   }
 `;
 
@@ -180,7 +182,7 @@ export const ItemList = styled.li`
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-line-height: 14.56px;
+  line-height: 14.56px;
   line-height: 104%;
   letter-spacing: -0.02em;
   color: #ffffff;
@@ -192,19 +194,14 @@ line-height: 14.56px;
   @media (min-width: 768px) {
     font-size: 22px;
   }
-
-
-
-
 `;
 
 export const NumberBlock = styled.p`
   font-family: 'DM Sans';
   font-style: normal;
   font-size: 267px;
-line-height: 230.96px;
- 
- 
+  line-height: 230.96px;
+
   letter-spacing: -0.02em;
 
   color: #ffffff;
@@ -213,14 +210,9 @@ line-height: 230.96px;
   opacity: 0.47;
   @media (min-width: 768px) {
     font-weight: 700;
-  font-size: 515px;
-  line-height: 86.5%;
+    font-size: 515px;
+    line-height: 86.5%;
   }
-
-
-
-
-
 `;
 
 export const Image = styled.img`
@@ -228,11 +220,10 @@ export const Image = styled.img`
   height: 269px;
   position: absolute;
   top: 0;
- 
 
   @media (min-width: 768px) {
     width: 430px;
-  height: 430px;
-  left: 50px;
+    height: 430px;
+    left: 50px;
   }
 `;

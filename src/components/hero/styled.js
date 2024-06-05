@@ -409,6 +409,7 @@ border: 1px solid #282828;
 `;
 
 export const HrefButton = styled.a`
+ font-family: 'DM Sans', sans-serif;
   color: #fff;
   &:hover {
     color: rgba(40, 40, 40, 1);
