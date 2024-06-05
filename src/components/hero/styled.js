@@ -353,15 +353,16 @@ export const SliderButtonWrapperMob = styled.div`
 `;
 
 export const SilderButton = styled.button`
+
+font-weight: 400;
+line-height: 18px;
+padding: 18px 5px;
+width: 89px;
+height: 32px;
+font-family: 'DM Sans', sans-serif;
 border: 1px solid #D4D2E3;
 font-style: normal;
-font-size: 12px;
-text-align: center;
-  font-weight: 400;
-  line-height: 18px;
-  width: 155px;
-  height: 54px;
-  padding: 15px 20px;
+font-size: 9px;
   border-radius: 30px;
   order: 0;
   display: flex;
@@ -376,8 +377,12 @@ text-align: center;
     color: #FFFFFF;
     transition: 0.7s;
   }
-  @media (min-width: 744px) {
+  @media (min-width: 1024px) {
     font-size: 16px;
+    width: 155px;
+  height: 54px;
+  padding: 15px 20px;
+  font-weight: 700;
   }
 `;
 
@@ -385,32 +390,42 @@ export const ContactButton = styled.button`
 display: flex;
 justify-content: center;
 align-items: center;
-width: 120px;
-height: 54px;
+padding: 18px 24px;
+width: 89px;
+height: 32px;
+font-family: 'DM Sans', sans-serif;
+border: 1px solid #D4D2E3;
+font-style: normal;
+font-size: 9px;
+text-align: center;
+  font-weight: 700;
+  line-height: 18px;
 background: linear-gradient(99.29deg, #282828 7.44%, #2D2D2D 96.69%);
 border-radius: 30px;
-font-family: 'DM Sans';
+
 font-style: normal;
 font-weight: 700;
-font-size: 16px;
-line-height: 18px;
-text-align: center;
 color: #FFFFFF;
 border: 1px solid #282828;
-
-
 &:hover {
     background: #FFFFFF;
     color: #282828;
     transition: 0.7s;
 
   }
-
+  @media (min-width: 1024px) {
+    font-size: 16px;
+    width: 120px;
+height: 54px;
+  padding: 15px 20px;
+  }
 `;
 
 export const HrefButton = styled.a`
  font-family: 'DM Sans', sans-serif;
   color: #fff;
+  font-weight: 400;
+line-height: 18px;
   &:hover {
     color: rgba(40, 40, 40, 1);
     transition: 0.7s;

@@ -24,7 +24,6 @@ export const TitleWrapperProdList = styled.div`
     align-items: center;
   }
   @media (min-width: 1024px) {
-   
   }
 `;
 
@@ -35,10 +34,14 @@ export const StyledProductList = styled.h2`
   font-size: 20px;
   line-height: 66px;
   @media (min-width: 768px) {
-    font-size: 56px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 66px;
+    text-align: left;
   }
   @media (min-width: 1024px) {
-   margin-right: 790px;
+    margin-right: 790px;
+    font-size: 56px;
   }
 `;
 
@@ -54,7 +57,7 @@ export const StyledItem = styled.div`
   display: flex;
   flex-direction: column;
   &:not(:first-child) {
-    margin-top: 100px;
+    margin-top: 30px;
   }
 
   @media (min-width: 768px) {
@@ -93,8 +96,11 @@ export const ListBlock = styled.div`
   flex-direction: column;
   align-items: center;
   @media (min-width: 768px) {
-    margin-right: 62px;
+    margin-right: 25px;
     align-items: normal;
+  }
+  @media (min-width: 1024px) {
+    margin-right: 62px;
   }
 `;
 
@@ -103,7 +109,6 @@ export const ListSecondBlock = styled.div`
   flex-direction: column;
   align-items: center;
   @media (min-width: 768px) {
-
     align-items: normal;
   }
 `;
@@ -140,6 +145,9 @@ export const ImageSecondBlock = styled.div`
   @media (min-width: 768px) {
     display: block;
     position: relative;
+    margin-right: 25px;
+  }
+  @media (min-width: 1024px) {
     margin-right: 62px;
   }
 `;
@@ -151,22 +159,29 @@ export const FlexList = styled.div`
 `;
 export const FirstListSection = styled.ul`
   margin-top: 30px;
-  width: 261px;
+
   text-align: center;
   @media (min-width: 768px) {
+    text-align: left;
+  }
+  @media (min-width: 1024px) {
     height: 400px;
     margin-right: 30px;
+    width: 261px;
   }
 `;
 
 export const SecondListSection = styled.ul`
   margin-top: 20px;
-  width: 261px;
 
-  text-align: center;
   @media (min-width: 768px) {
+    text-align: left;
+  }
+  text-align: center;
+  @media (min-width: 1024px) {
     height: 400px;
     margin-top: 30px;
+    width: 261px;
   }
 `;
 
@@ -191,7 +206,7 @@ export const ItemList = styled.li`
   &:not(:first-child) {
     margin-top: 20px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     font-size: 22px;
   }
 `;
@@ -208,7 +223,7 @@ export const NumberBlock = styled.p`
 
   mix-blend-mode: soft-light;
   opacity: 0.47;
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     font-weight: 700;
     font-size: 515px;
     line-height: 86.5%;
@@ -221,7 +236,7 @@ export const Image = styled.img`
   position: absolute;
   top: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     width: 430px;
     height: 430px;
     left: 50px;

@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   StyledItem,
-  StyledSubTitle,
-  StyledP,
-  StyledWraper,
-  StyledButton,
-  StyledPlus,
-  StyledCross,
+
   ListBlock,
   MainTextBlock,
   ImageBlock,
@@ -33,7 +28,6 @@ const Product = () => {
     <StyledSection>
       <TitleWrapperProdList>
         <StyledProductList>Products List</StyledProductList>
-     
       <StyledItem id="services">
         <ListBlock>
           <MainTextBlock>Development.</MainTextBlock>
@@ -99,12 +93,12 @@ const Product = () => {
             <SecondListSection>
               <ItemList>Пакетный дизайн</ItemList>
               <ItemList>
-                Типографика и <br />
+                Типографика и <StyledBr />
                 леттеринг
               </ItemList>
               <ItemList>Дизайн для социальных сетей</ItemList>
               <ItemList>
-                Анимация и видео <br />
+                Анимация и видео <StyledBr />
                 дизайн
               </ItemList>
               <ItemList>Разработка фирменного стиля</ItemList>
@@ -123,18 +117,18 @@ const Product = () => {
           <FlexList>
             <FirstListSection>
               <ItemList>
-                Банерная реклама на <br />
+                Банерная реклама на <StyledBr />
                 сайтах
               </ItemList>
               <ItemList>SMM</ItemList>
               <ItemList>Контекстная реклама</ItemList>
               <ItemList>Seo Оптимизация</ItemList>
               <ItemList>
-                Таргетированная <br />
+                Таргетированная <StyledBr />
                 реклама
               </ItemList>
               <ItemList>
-                Маркетинговая <br />
+                Маркетинговая <StyledBr />
                 стратегия
               </ItemList>
               <ItemList>Маркетинговый аудит</ItemList>
