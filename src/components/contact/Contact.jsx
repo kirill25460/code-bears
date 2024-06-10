@@ -8,7 +8,6 @@ import {
   StyledField,
   StyledInputWraper,
   StyledLabel,
-  Error,
   StyledTitleSpan,
   StyledTitle,
   StyledText,

@@ -6,7 +6,6 @@ import FooterRoutCard from './FooterRoutCard';
 import {
   StyledFooter,
   FooterNav,
-  FooterP,
   FooterContactCardUl,
   FooterRoutCardUl,
   ImgBearFooter,
