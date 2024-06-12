@@ -12,7 +12,6 @@ import Rocket from 'components/Scene/Scene';
 const Main = () => {
   return (
     <StyledMain>
-       <Rocket/>
       <Header />
       <Hero/>
       <Product/>
@@ -20,7 +19,7 @@ const Main = () => {
       <Moon />
       <Contact />
       <Footer />
-     
+      <Rocket/>
     </StyledMain>
   )
 }

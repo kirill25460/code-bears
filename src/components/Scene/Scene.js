@@ -29,23 +29,16 @@ const Rocket = () => {
         const loader = new GLTFLoader();
         loader.load(rocketModel, (gltf) => {
             const rocket = gltf.scene;
-            rocket.scale.set(0.5, 0.5, 0.5); // Масштабування моделі
+            rocket.scale.set(0.2, 0.2, 0.2); // Масштабування моделі
             scene.add(rocket);
-
-            // Створення маршруту
             const curve = new CatmullRomCurve3([
-                new THREE.Vector3(-10, 0, 10),
-                new THREE.Vector3(-5, 5, 5),
+                new THREE.Vector3(0, -window.innerHeight / 2, 0),
                 new THREE.Vector3(0, 0, 0),
-                new THREE.Vector3(5, -5, 5),
-                new THREE.Vector3(10, 0, 10)
+                new THREE.Vector3(0, window.innerHeight / 2, 0),
+                new THREE.Vector3(0, window.innerHeight, 0),
+                new THREE.Vector3(0, window.innerHeight * 1.5, 0),
+                new THREE.Vector3(0, window.innerHeight * 2, 0),
             ]);
-
-            const points = curve.getPoints(50);
-            const geometry = new THREE.BufferGeometry().setFromPoints(points);
-            const material = new THREE.LineBasicMaterial({ color: 0xff0000 });
-            const curveObject = new THREE.Line(geometry, material);
-            scene.add(curveObject);
 
             // Анімація ракети вздовж кривої
             const animate = () => {
@@ -81,7 +74,6 @@ const Rocket = () => {
             mountRef.current.removeChild(renderer.domElement);
         };
     }, []);
-
     return <div ref={mountRef}></div>;
 };
 
