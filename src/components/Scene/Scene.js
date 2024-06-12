@@ -28,7 +28,12 @@ const Rocket = () => {
         const loader = new GLTFLoader();
         loader.load(rocketModel, (gltf) => {
             const rocket = gltf.scene;
-            rocket.scale.set(1, 1, 0.5); // Масштабування моделі
+            rocket.scale.set(0.2, 0.2, 0.2); // Масштабування моделі
+               rocket.traverse((child) => {
+                if (child.isMesh) {
+                    child.material = new THREE.MeshStandardMaterial({ color: 0xff0000 }); // Червоний колір
+                }
+            });
             scene.add(rocket);
 
             // Анімація
