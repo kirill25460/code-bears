@@ -10,7 +10,7 @@ const Rocket = () => {
     useEffect(() => {
         // Сцена
         const scene = new THREE.Scene();
-
+        scene.background = new THREE.Color(0xffffff);
         // Камера
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         camera.position.set(0, 2, 5);
@@ -31,30 +31,37 @@ const Rocket = () => {
             const rocket = gltf.scene;
             rocket.scale.set(0.2, 0.2, 0.2); // Масштабування моделі
             scene.add(rocket);
-            const curve = new CatmullRomCurve3([
-                new THREE.Vector3(0, -window.innerHeight / 2, 0),
-                new THREE.Vector3(0, 0, 0),
-                new THREE.Vector3(0, window.innerHeight / 2, 0),
-                new THREE.Vector3(0, window.innerHeight, 0),
-                new THREE.Vector3(0, window.innerHeight * 1.5, 0),
-                new THREE.Vector3(0, window.innerHeight * 2, 0),
-            ]);
+            // const curve = new CatmullRomCurve3([
+            //     new THREE.Vector3(0, -window.innerHeight / 2, 0),
+            //     new THREE.Vector3(0, 0, 0),
+            //     new THREE.Vector3(0, window.innerHeight / 2, 0),
+            //     new THREE.Vector3(0, window.innerHeight, 0),
+            //     new THREE.Vector3(0, window.innerHeight * 1.5, 0),
+            //     new THREE.Vector3(0, window.innerHeight * 2, 0),
+            // ]);
 
             // Анімація ракети вздовж кривої
+            // const animate = () => {
+            //     requestAnimationFrame(animate);
+
+            //     // Обчислення позиції ракети залежно від скролінгу сторінки
+            //     const scrollPosition = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+            //     const point = curve.getPointAt(scrollPosition);
+            //     const tangent = curve.getTangentAt(scrollPosition);
+
+            //     rocket.position.copy(point);
+            //     rocket.lookAt(point.add(tangent));
+
+            //     renderer.render(scene, camera);
+            // };
             const animate = () => {
                 requestAnimationFrame(animate);
 
-                // Обчислення позиції ракети залежно від скролінгу сторінки
-                const scrollPosition = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
-                const point = curve.getPointAt(scrollPosition);
-                const tangent = curve.getTangentAt(scrollPosition);
-
-                rocket.position.copy(point);
-                rocket.lookAt(point.add(tangent));
+                rocket.rotation.x += 0.01;
+                rocket.rotation.y += 0.01;
 
                 renderer.render(scene, camera);
             };
-
             animate();
         }, undefined, (error) => {
             console.error('An error happened while loading the model', error);
