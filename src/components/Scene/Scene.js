@@ -1,7 +1,9 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import rocketModel from '../../images/raketa.gltf'; // Імпорт файлу моделі
 
-const Cube = () => {
+const Rocket = () => {
     const mountRef = useRef(null);
 
     useEffect(() => {
@@ -17,23 +19,32 @@ const Cube = () => {
         renderer.setSize(window.innerWidth, window.innerHeight);
         mountRef.current.appendChild(renderer.domElement);
 
-        // Геометрія куба
-        const geometry = new THREE.BoxGeometry();
-        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-        const cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
+        // Додавання світла
+        const light = new THREE.DirectionalLight(0xffffff, 1);
+        light.position.set(1, 1, 1).normalize();
+        scene.add(light);
 
-        // Анімація
-        const animate = () => {
-            requestAnimationFrame(animate);
+        // Завантаження моделі ракети
+        const loader = new GLTFLoader();
+        loader.load(rocketModel, (gltf) => {
+            const rocket = gltf.scene;
+            rocket.scale.set(1, 1, 0.5); // Масштабування моделі
+            scene.add(rocket);
 
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
+            // Анімація
+            const animate = () => {
+                requestAnimationFrame(animate);
 
-            renderer.render(scene, camera);
-        };
+                rocket.rotation.x += 0.01;
+                rocket.rotation.y += 0.01;
 
-        animate();
+                renderer.render(scene, camera);
+            };
+
+            animate();
+        }, undefined, (error) => {
+            console.error('An error happened while loading the model', error);
+        });
 
         // Очистка ресурсу при демонтажі компонента
         return () => {
@@ -44,4 +55,4 @@ const Cube = () => {
     return <div ref={mountRef}></div>;
 };
 
-export default Cube;
+export default Rocket;
