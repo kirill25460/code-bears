@@ -266,7 +266,7 @@ export const ItemList = styled.li`
   letter-spacing: -0.02em;
   color: #ffffff;
   text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.68);
-
+cursor: pointer;
   &:not(:first-child) {
     margin-top: 20px;
   }
