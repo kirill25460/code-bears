@@ -65,4 +65,6 @@ export const CloseIcon = styled(IoClose)`
   width: 24px;
   height: 24px;
   background: #555555;
+
+  cursor: pointer;
 `;
