@@ -59,12 +59,15 @@ export const StyledList = styled.ul`
 export const StyledItem = styled.div`
   display: flex;
   flex-direction: column;
+
   &:not(:first-child) {
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: 768px) {
     flex-direction: row;
+    margin-bottom: 100px;
   }
 `;
 
@@ -109,8 +112,6 @@ export const ListBlock = styled.div`
     margin-right: 189px;
   }
 `;
-
-
 
 export const ListBlock03 = styled.div`
   display: flex;
@@ -199,7 +200,6 @@ export const FirstListSection = styled.ul`
   }
 `;
 
-
 export const SecondListSection = styled.ul`
   margin-top: 20px;
 
@@ -248,7 +248,6 @@ export const SecondListSection03 = styled.ul`
   }
 `;
 
-
 export const StyledBr = styled.br`
   display: none;
   @media (min-width: 768px) {
@@ -266,7 +265,7 @@ export const ItemList = styled.li`
   letter-spacing: -0.02em;
   color: #ffffff;
   text-shadow: 0px 4px 16px rgba(0, 0, 0, 0.68);
-cursor: pointer;
+  cursor: pointer;
   &:not(:first-child) {
     margin-top: 20px;
   }

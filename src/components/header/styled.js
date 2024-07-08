@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { SlArrowDown } from "react-icons/sl";
+import styled from 'styled-components';
+import { SlArrowDown } from 'react-icons/sl';
 
 export const ButtonArrow = styled(SlArrowDown)`
   width: 60px;
@@ -16,7 +16,7 @@ export const StyledHeader = styled.header`
     display: block;
     background-color: #141415;
     padding: 15px 0;
-    font-family: "DM Sans", sans-serif;
+    font-family: 'DM Sans', sans-serif;
   }
 `;
 
@@ -65,7 +65,7 @@ export const PurpleWord = styled.span`
 `;
 
 export const HeroSubTitleTablet = styled.p`
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   width: 100px;
   text-align: center;
   font-size: 10px;
@@ -99,7 +99,7 @@ export const HeaderNavLogoWrapper = styled.div`
   @media (min-width: 1045px) {
     display: flex;
     align-items: center;
-    gap: 400px;
+    justify-content: space-between;
   }
 `;
 
