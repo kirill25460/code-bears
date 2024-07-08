@@ -1,87 +1,77 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { CatmullRomCurve3 } from 'three';
-import rocketModel from '../../images/raketa.gltf'; // Імпорт файлу моделі
+import rocketModel from '../../images/raketa.gltf'; // Импорт файла модели
 
 const Rocket = () => {
-    const mountRef = useRef(null);
+  const mountRef = useRef(null);
 
-    useEffect(() => {
-        // Сцена
-        const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0xffffff);
-        // Камера
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.set(0, 2, 5);
+  useEffect(() => {
+    const currentMount = mountRef.current;
 
-        // Рендерер
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        mountRef.current.appendChild(renderer.domElement);
+    // Сцена
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xffffff);
+    // Камера
+    const camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
+    camera.position.set(0, 2, 5);
 
-        // Додавання світла
-        const light = new THREE.DirectionalLight(0xffffff, 1);
-        light.position.set(1, 1, 1).normalize();
-        scene.add(light);
+    // Рендерер
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    currentMount.appendChild(renderer.domElement);
 
-        // Завантаження моделі ракети
-        const loader = new GLTFLoader();
-        loader.load(rocketModel, (gltf) => {
-            const rocket = gltf.scene;
-            rocket.scale.set(0.2, 0.2, 0.2); // Масштабування моделі
-            scene.add(rocket);
-            // const curve = new CatmullRomCurve3([
-            //     new THREE.Vector3(0, -window.innerHeight / 2, 0),
-            //     new THREE.Vector3(0, 0, 0),
-            //     new THREE.Vector3(0, window.innerHeight / 2, 0),
-            //     new THREE.Vector3(0, window.innerHeight, 0),
-            //     new THREE.Vector3(0, window.innerHeight * 1.5, 0),
-            //     new THREE.Vector3(0, window.innerHeight * 2, 0),
-            // ]);
+    // Добавление света
+    const light = new THREE.DirectionalLight(0xffffff, 1);
+    light.position.set(1, 1, 1).normalize();
+    scene.add(light);
 
-            // Анімація ракети вздовж кривої
-            // const animate = () => {
-            //     requestAnimationFrame(animate);
+    // Загрузка модели ракеты
+    const loader = new GLTFLoader();
+    loader.load(
+      rocketModel,
+      gltf => {
+        const rocket = gltf.scene;
+        rocket.scale.set(0.2, 0.2, 0.2); // Масштабирование модели
+        scene.add(rocket);
 
-            //     // Обчислення позиції ракети залежно від скролінгу сторінки
-            //     const scrollPosition = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
-            //     const point = curve.getPointAt(scrollPosition);
-            //     const tangent = curve.getTangentAt(scrollPosition);
+        const animate = () => {
+          requestAnimationFrame(animate);
 
-            //     rocket.position.copy(point);
-            //     rocket.lookAt(point.add(tangent));
+          rocket.rotation.x += 0.01;
+          rocket.rotation.y += 0.01;
 
-            //     renderer.render(scene, camera);
-            // };
-            const animate = () => {
-                requestAnimationFrame(animate);
-
-                rocket.rotation.x += 0.01;
-                rocket.rotation.y += 0.01;
-
-                renderer.render(scene, camera);
-            };
-            animate();
-        }, undefined, (error) => {
-            console.error('An error happened while loading the model', error);
-        });
-
-        // Обробка зміни розміру вікна
-        const handleResize = () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
+          renderer.render(scene, camera);
         };
-        window.addEventListener('resize', handleResize);
+        animate();
+      },
+      undefined,
+      error => {
+        console.error('An error happened while loading the model', error);
+      }
+    );
 
-        // Очистка ресурсу при демонтажі компонента
-        return () => {
-            window.removeEventListener('resize', handleResize);
-            mountRef.current.removeChild(renderer.domElement);
-        };
-    }, []);
-    return <div ref={mountRef}></div>;
+    // Обработка изменения размера окна
+    const handleResize = () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    };
+    window.addEventListener('resize', handleResize);
+
+    // Очистка ресурса при демонтаже компонента
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      currentMount.removeChild(renderer.domElement);
+    };
+  }, []);
+
+  return <div ref={mountRef}></div>;
 };
 
 export default Rocket;
