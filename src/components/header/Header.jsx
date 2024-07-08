@@ -1,5 +1,5 @@
-import React from "react";
-import { configHeader } from "./configHeader";
+import React from 'react';
+import { configHeader } from './configHeader';
 import {
   StyledHeader,
   Nav,
@@ -14,10 +14,11 @@ import {
   BoldWord,
   ButtonArrow,
   ImgBear,
-} from "./styled";
-import { Container } from "../common/styled";
-import HeaderLogo from "../icons/HeaderLogo";
-import BearPng from '../../images/header/BearPng.png'
+} from './styled';
+import { Container } from '../common/styled';
+import HeaderLogo from '../icons/HeaderLogo';
+import BearPng from '../../images/header/BearPng.png';
+import LanguageSwitcher from 'components/LanguageSwitch/LanguageSwitch';
 
 const Header = () => {
   return (
@@ -27,13 +28,14 @@ const Header = () => {
           <HeaderLogo />
           <Nav>
             <HeaderNavList>
-              {configHeader.map((item) => (
+              {configHeader.map(item => (
                 <li key={item.id}>
                   <HeaderNavLink href={item.link}>{item.text}</HeaderNavLink>
                 </li>
               ))}
             </HeaderNavList>
           </Nav>
+          <LanguageSwitcher />
         </HeaderNavLogoWrapper>
         <TabletStyleWrapper>
           <ImgBear src={BearPng} />
