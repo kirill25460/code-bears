@@ -8,16 +8,19 @@ import {
   ConteinerUl,
 } from './styled';
 import { configMiniBoxes } from './configMiniBoxes';
+import { useTranslation } from 'react-i18next';
 
 const Boxes = () => {
+  const { t } = useTranslation();
+
   return (
     <ConteinerUl>
       <StyledUl>
         {configMiniBoxes.map((item, index) => (
           <MiniBoxesCard key={index}>
             <TopLine />
-            <SubTitle>{item.title}</SubTitle>
-            <BoxesText>{item.text}</BoxesText>
+            <SubTitle>{t(item.title)}</SubTitle>
+            <BoxesText>{t(item.text)}</BoxesText>
           </MiniBoxesCard>
         ))}
       </StyledUl>
