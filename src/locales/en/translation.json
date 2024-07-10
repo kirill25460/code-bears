@@ -1,6 +1,35 @@
 {
-    "welcome": "Welcome",
-    "description": "This is a description.",
-    "contact": "Contact Us",
-    "order": "Order Now"
-}
+    "header": {
+      "home": "Home",
+      "service": "Services",
+      "aboutUs": "About us",
+      "contact": "Contact"
+    },
+    "hero": {
+        "text": "Reviews from our clients. Find out what people are saying about our work! In this section, you will find real reviews from satisfied clients. See for yourself why they choose us again and again.",
+        "mainText": "Not just product But a selling one",
+        "textItem": "We combine everything the best features in one projects: quality, speed, customizability and comfort."
+    },
+    "product": {
+    },
+    "miniBoxes": {
+        "firstItem": {
+            "mainText": "Legal Processing.",
+            "text": "We love creativity, but do not forget about the objective reality, all our business deals are designed in such a way that each party gets the desired result."
+        },
+        "secondItem": {
+            "mainText": "Flexible Solutions.",
+            "text": "We accept project requests all the time and are always happy to handle your request, we are prepared to work with tight deadlines if your situation requires it."
+        },
+        "thirdItem": {
+            "mainText": "Personalization.",
+            "text": "Individual approach to each project, target audience and also to the project goals. We are in constant communication with you throughout the development."
+        }
+    },
+    "contact": {
+        "mainText": "Feeling like you have seen enough?",
+        "spanText": "Lets work together!",
+        "required": "Required fields",
+        "text": "????"
+    }
+  }

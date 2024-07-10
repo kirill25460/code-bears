@@ -17,6 +17,7 @@ import {
   InfoText,
   StyledFieldMess,
 } from './styled';
+import { useTranslation } from 'react-i18next';
 
 const contactSchema = Yup.object().shape({
   name: Yup.string()
@@ -31,14 +32,16 @@ const contactSchema = Yup.object().shape({
 });
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledSection id="contact">
       <ColorConteiner>
         <Container>
           <StyledTitle>
-            Feeling like you have seen enough?
+            {t('contact.mainText')}
             <br />
-            <StyledTitleSpan>Lets work together!</StyledTitleSpan>
+            <StyledTitleSpan>{t('contact.spanText')}</StyledTitleSpan>
           </StyledTitle>
           <Formik
             initialValues={{
@@ -57,25 +60,21 @@ const Contact = () => {
                   <StyledLabel>
                     Name*
                     <StyledField name="name" required />
-                    
                   </StyledLabel>
                   <StyledLabel>
                     Email*
                     <StyledField name="email" type="email" required />
-                   
                   </StyledLabel>
                 </StyledInputWraper>
                 <StyledLabel>
                   Message*
-                  <StyledFieldMess  as="textarea" name="message" />
-                 
+                  <StyledFieldMess as="textarea" name="message" />
                 </StyledLabel>
                 <Button id="contact" />
               </StyledForm>
             )}
-           
           </Formik>
-          <InfoText>* - Required fields</InfoText>
+          <InfoText>* - {t('contact.required')}</InfoText>
           <StyledText>
             Or if you have any questions left <br />
             Be sure to <StyledSpan>contact</StyledSpan> us, we always love to

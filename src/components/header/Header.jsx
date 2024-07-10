@@ -19,8 +19,13 @@ import { Container } from '../common/styled';
 import HeaderLogo from '../icons/HeaderLogo';
 import BearPng from '../../images/header/BearPng.png';
 import LanguageSwitcher from 'components/LanguageSwitch/LanguageSwitch';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t } = useTranslation();
+
+  console.log(t)
+
   return (
     <StyledHeader>
       <Container>
@@ -30,7 +35,9 @@ const Header = () => {
             <HeaderNavList>
               {configHeader.map(item => (
                 <li key={item.id}>
-                  <HeaderNavLink href={item.link}>{item.text}</HeaderNavLink>
+                  <HeaderNavLink href={item.link}>
+                    {t(item.text)}
+                  </HeaderNavLink>
                 </li>
               ))}
             </HeaderNavList>

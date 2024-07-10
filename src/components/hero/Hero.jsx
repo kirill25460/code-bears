@@ -40,9 +40,11 @@ import ImgSlider from '../../images/main/slider.png';
 import Modal from '../common/modal/Modal';
 import bl from '../../images/main/block.png';
 import bg from '../../images/main/block_shadow.png';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
   const [isModalOpen, setModalOpen] = useState(false);
+  const { t } = useTranslation();
   const handleModalOpen = () => {
     setModalOpen(true);
     document.body.style.overflow = 'hidden';
@@ -72,13 +74,7 @@ const Hero = () => {
             <BlockShadowImg src={bg} />
             <OverlayContent>
               <ImageText>
-                Review of our work by some doode, damn chuck-a-fill tastes
-                good.Review of our work by some doode, damn chuck-a-fill tastes
-                good.Review of our work by some doode, damn chuck-a-fill tastes
-                good.Review of our work by some doode, damn chuck-a-fill tastes
-                good.Review of our work by some doode, damn chuck-a-fill tastes
-                good.Review of our work by some doode, damn chuck-a-fill tastes
-                good.
+                {t('hero.text')}
               </ImageText>
 
               <FlexBox>
@@ -93,12 +89,10 @@ const Hero = () => {
         <SliderWrapper>
           <TextButtonWrapper>
             <TextButtonH2>
-              Not just product <br />
-              But a selling one
+              {t('hero.mainText')}
             </TextButtonH2>
             <TextButtonP>
-              We combine everything the best features in one projects: quality,
-              speed, customizability and comfort.
+              {t('hero.textItem')}
             </TextButtonP>
             <SliderButtonWrapper>
               <ContactButton onClick={handleModalOpen}>Contacts</ContactButton>
@@ -111,20 +105,20 @@ const Hero = () => {
             {isModalOpen && <Modal onClick={handleModalClose} />}
           </TextButtonWrapper>
           <MainImgWrap>
-          <MainImgWork src={ImgSlider} alt="slider" />
-          <MainImgWork2 src={ImgSlider} alt="slider" />
-          <MainImgWork3 src={ImgSlider} alt="slider" />
-          <MainImgWork4 src={ImgSlider} alt="slider" />
-          <MainImgWork5 src={ImgSlider} alt="slider" />
+            <MainImgWork src={ImgSlider} alt="slider" />
+            <MainImgWork2 src={ImgSlider} alt="slider" />
+            <MainImgWork3 src={ImgSlider} alt="slider" />
+            <MainImgWork4 src={ImgSlider} alt="slider" />
+            <MainImgWork5 src={ImgSlider} alt="slider" />
           </MainImgWrap>
-         
+
           <SliderButtonWrapperMob>
             <ContactButton onClick={handleModalOpen}>Contacts</ContactButton>
             <SilderButton>
-                <HrefButton href="#contact">
-                  <SilderButton>Start project</SilderButton>
-                </HrefButton>
-              </SilderButton>
+              <HrefButton href="#contact">
+                <SilderButton>Start project</SilderButton>
+              </HrefButton>
+            </SilderButton>
           </SliderButtonWrapperMob>
         </SliderWrapper>
       </Container>

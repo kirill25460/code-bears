@@ -1,21 +1,22 @@
-export const configHeader = [{
-    text: 'Home',
+export const configHeader = [
+  {
+    text: 'header.home',
     link: '#home',
     id: 'home',
-},
-{
-    text: 'Services',
+  },
+  {
+    text: 'header.service',
     link: '#services',
     id: 'services',
-},
-{
-    text: 'About us',
+  },
+  {
+    text: 'header.aboutUs',
     link: '#about-us',
     id: 'about-us',
-},
-{
-    text: 'Contact',
+  },
+  {
+    text: 'header.contact',
     link: '#contact',
     id: 'contact',
-},
-]
+  },
+];
