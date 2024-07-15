@@ -7,8 +7,10 @@ import {
   CloseIcon,
   ModalDescription,
 } from './modalProduct.styled';
+import { useTranslation } from 'react-i18next';
 
 const Modal = ({ showModal, closeModal, data }) => {
+  const { t } = useTranslation();
   useEffect(() => {
     const handleKeyDown = event => {
       if (event.keyCode === 27) {
@@ -36,9 +38,9 @@ const Modal = ({ showModal, closeModal, data }) => {
     <ModalBackground onClick={closeModal}>
       <ModalContainer onClick={e => e.stopPropagation()}>
         <CloseIcon onClick={closeModal} />
-        <ModalText>{data.title}</ModalText>
+        <ModalText>{t(data.title)}</ModalText>
         <ModalImg src={data.picture}></ModalImg>
-        <ModalDescription>{data.description}</ModalDescription>
+        <ModalDescription>{t(data.description)}</ModalDescription>
       </ModalContainer>
     </ModalBackground>
   );
