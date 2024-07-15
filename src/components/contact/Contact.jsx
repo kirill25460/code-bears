@@ -12,7 +12,6 @@ import {
   StyledTitle,
   StyledText,
   StyledSection,
-  StyledSpan,
   ColorConteiner,
   InfoText,
   StyledFieldMess,
@@ -76,9 +75,8 @@ const Contact = () => {
           </Formik>
           <InfoText>* - {t('contact.required')}</InfoText>
           <StyledText>
-            Or if you have any questions left <br />
-            Be sure to <StyledSpan>contact</StyledSpan> us, we always love to
-            hear you!
+            {t('contact.text.first')}<br />
+            {t('contact.text.second')}
           </StyledText>
         </Container>
       </ColorConteiner>

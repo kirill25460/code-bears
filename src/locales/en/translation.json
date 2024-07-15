@@ -1,35 +1,140 @@
 {
-    "header": {
-      "home": "Home",
-      "service": "Services",
-      "aboutUs": "About us",
-      "contact": "Contact"
+  "header": {
+    "home": "Home",
+    "service": "Services",
+    "aboutUs": "About us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "text": "Reviews from our clients. Find out what people are saying about our work! In this section, you will find real reviews from satisfied clients. See for yourself why they choose us again and again.",
+    "mainText": "Not just product But a selling one",
+    "textItem": "We combine everything the best features in one projects: quality, speed, customizability and comfort."
+  },
+  "product": {
+    "developmentFirstArray": {
+      "ProgressiveWebApps": "Progressive Web Apps",
+      "APIDevelopment": "API Development",
+      "BigDataAndAnalytics": "Big Data and Analytics",
+      "BusinessProcessAutomationAndOptimization": "Business Process Automation and Optimization",
+      "DevelopmentOfElectronicJournalsAndAccountingSystems": "Development of Electronic Journals and Accounting Systems",
+      "OnlineEducationPlatforms": "Online Education Platforms"
     },
-    "hero": {
-        "text": "Reviews from our clients. Find out what people are saying about our work! In this section, you will find real reviews from satisfied clients. See for yourself why they choose us again and again.",
-        "mainText": "Not just product But a selling one",
-        "textItem": "We combine everything the best features in one projects: quality, speed, customizability and comfort."
+    "developmentSecondArray": {
+      "DocumentManagementSystems": "Document Management Systems",
+      "ERPAndCRMSystems": "ERP and CRM Systems",
+      "CorporateWebsites": "Corporate Websites",
+      "OnlineStores": "Online Stores",
+      "LandingPages": "Landing Pages",
+      "MobileApps": "Mobile Apps",
+      "ArtificialIntelligence": "Artificial Intelligence (AI)"
     },
-    "product": {
+    "designFirstArray": {
+      "AdvertisingBanners": "Advertising Banners",
+      "MotionDesign": "Motion Design",
+      "BrandBook": "Brand Book",
+      "WebDesign": "Web Design",
+      "UxUiDesign": "UX/UI Design",
+      "IllustrationsAndIconography": "Illustrations and Iconography",
+      "3DModelingAndVisualization": "3D Modeling and Visualization",
+      "Infographics": "Infographics"
     },
-    "miniBoxes": {
-        "firstItem": {
-            "mainText": "Legal Processing.",
-            "text": "We love creativity, but do not forget about the objective reality, all our business deals are designed in such a way that each party gets the desired result."
-        },
-        "secondItem": {
-            "mainText": "Flexible Solutions.",
-            "text": "We accept project requests all the time and are always happy to handle your request, we are prepared to work with tight deadlines if your situation requires it."
-        },
-        "thirdItem": {
-            "mainText": "Personalization.",
-            "text": "Individual approach to each project, target audience and also to the project goals. We are in constant communication with you throughout the development."
-        }
+    "designSecondArray": {
+      "PackageDesign": "Package Design",
+      "TypographyAndLettering": "Typography and Lettering",
+      "SocialMediaDesign": "Social Media Design",
+      "AnimationAndVideoDesign": "Animation and Video Design",
+      "CorporateIdentityDevelopment": "Corporate Identity Development",
+      "PhotoRetouchingAndEditing": "Photo Retouching and Editing"
     },
-    "contact": {
-        "mainText": "Feeling like you have seen enough?",
-        "spanText": "Lets work together!",
-        "required": "Required fields",
-        "text": "????"
+    "marketingFisrtArray": {
+      "BannerAdvertisingOnWebsites": "Banner Advertising on Websites",
+      "Smm": "SMM (Social Media Marketing)",
+      "ContextualAdvertising": "Contextual Advertising",
+      "SeoOptimization": "SEO Optimization",
+      "TargetedAdvertising": "Targeted Advertising",
+      "MarketingStrategy": "Marketing Strategy",
+      "MarketingAudit": "Marketing Audit"
+    },
+    "marketingSecondArray": {
+      "EmailCampaigns": "Email Campaigns",
+      "CompetitorAnalysis": "Competitor Analysis",
+      "WebAnalytics": "Web Analytics",
+      "ContentPlan": "Content Plan"
+    }
+  },
+  "productDescription": {
+    "developmentFirstArray": {
+      "ProgressiveWebApps": "PWA (Progressive Web Apps) Progressive Web Apps (PWAs) represent a new approach to creating websites that combine the best features of web pages and mobile applications. They work in any browser and on all devices, providing fast response times and reliable performance. PWAs use modern web standards to offer users offline capabilities, push notifications, and the ability to install apps on the home screen without needing to download from an app store. This makes them accessible and convenient for users while reducing development and maintenance costs for businesses. PWAs also offer high performance and security, thanks to the use of HTTPS and Service Workers technology.",
+      "APIDevelopment": "API (Application Programming Interface) development involves creating interfaces that allow different programs to interact with each other. APIs can be used to integrate various services, applications, and databases, enabling data exchange and functionality sharing. This allows companies to automate processes, improve system interactions, and speed up the development of new products. API development requires deep knowledge of programming, data security, and version control to ensure reliable and secure integration of systems.",
+      "BigDataAndAnalytics": "Big Data analytics involves collecting, storing, and analyzing large volumes of data that cannot be processed using traditional methods. By using specialized tools and algorithms, companies can extract valuable insights from data that help improve business processes, understand customer behavior, and predict trends. Big Data analytics enables data-driven decision-making, increasing business efficiency and competitiveness. It spans various fields, including marketing, finance, manufacturing, and healthcare.",
+      "BusinessProcessAutomationAndOptimization": "Business process automation and optimization aim to increase company efficiency by implementing technology and software solutions. This includes using robotic process automation (RPA), business process management (BPM) systems, and other tools to automate routine tasks, improve departmental interactions, and reduce costs. Optimizing business processes helps eliminate bottlenecks, increase productivity and service quality, and speed up decision-making.",
+      "DevelopmentOfElectronicJournalsAndAccountingSystems": "Electronic journals and accounting systems are designed to automate the collection, storage, and processing of data. They enable tracking of various resources, events, and operations, providing real-time access to information. These systems can be used in various industries, including education, healthcare, manufacturing, and finance. They help reduce paperwork, lower error rates, and increase process transparency. Electronic journals and accounting systems also facilitate data analysis and decision-making based on current information.",
+      "OnlineEducationPlatforms": "Online education platforms provide tools for creating, managing, and delivering educational content over the internet. They include functionalities for conducting video lectures, webinars, testing, sharing materials, and facilitating interactions between students and teachers. These platforms offer flexible learning, accessible educational resources, and a personalized approach. They are widely used in educational institutions and corporate training, allowing for reduced education costs and improved quality."
+    },
+    "developmentSecondArray": {
+      "DocumentManagementSystems": "Document management systems automate the process of creating, storing, searching, and managing documents. They help reduce document processing time, improve security and accessibility, and simplify collaboration. Such systems can integrate with other business applications, providing unified data access and better task control. They help companies comply with regulatory requirements, reduce the risk of information loss, and increase document handling efficiency.",
+      "ERPAndCRMSystems": "ERP (Enterprise Resource Planning) and CRM (Customer Relationship Management) systems are designed to manage various aspects of business. ERP systems integrate and automate core business processes, including production, finance, procurement, and human resources management. CRM systems help manage customer interactions, improve service, and increase sales. They provide centralized data storage, analytical tools, and task automation, helping companies work more efficiently and make informed decisions.",
+      "CorporateWebsites": "Corporate websites serve as online representations of companies, designed to inform clients, partners, and employees about activities, products, and services. They include various sections such as news, contacts, product descriptions, and can integrate with CRM systems, e-commerce systems, and other business applications. Corporate websites help improve company image, attract new clients and partners, and provide a platform for interacting with the target audience.",
+      "OnlineStores": "Online stores enable customers to order goods and services over the internet. They include functionalities for managing product catalogs, shopping carts, order processing, and payment. Online stores can integrate with ERP and CRM systems, automating business processes and improving customer service. They allow for market expansion, reduced maintenance costs, and enhanced customer interaction, offering convenient tools for searching and purchasing products.",
+      "LandingPages": "Landing pages are designed to promote specific products, services, or campaigns. They have a simple structure, focus on a single offer, and include calls to action aimed at converting visitors into customers. Landing pages are used in marketing campaigns, advertising, and email newsletters to increase conversion rates and attract new customers. They help focus visitors' attention on the key offer and simplify the decision-making process.",
+      "MobileApps": "Mobile applications are programs developed to run on smartphones and tablets. They can be used for various purposes, including communication, entertainment, education, and business. Mobile applications provide convenient access to information and functionality, improving user interaction and loyalty. Developing mobile applications requires knowledge of platforms (iOS, Android), UX/UI design, and testing methods to ensure high quality and performance.",
+      "ArtificialIntelligence": "Artificial Intelligence (AI) involves using machine learning algorithms and data analysis to create systems capable of performing tasks that require human intelligence. This can include natural language processing, image recognition, forecasting, and decision-making. AI is applied in various industries, such as healthcare, finance, marketing, and manufacturing, helping to improve processes, increase accuracy and efficiency, and create new products and services."
+    },
+    "designFirstArray": {
+      "AdvertisingBanners": "Advertising banners are an important element of visual advertising used to draw attention to products, services, or promotions. They can be static or animated and can be placed on various platforms, including websites, social networks, and mobile applications. An effective banner should be visually appealing, contain a clear call to action, and convey the main message of the advertising campaign. Proper use of color, typography, and images plays a key role in creating successful banners that increase brand awareness and conversion.",
+      "MotionDesign": "Motion design involves creating animations and videos that help visually represent ideas, products, and services. It combines graphic design, animation, and cinematography to create dynamic and engaging content. Motion design is used in advertising, educational videos, presentations, and websites to improve the perception of information and retain the audience's attention. Effective motion design requires a creative approach and technical skills to create high-quality and memorable visual effects.",
+      "BrandBook": "A Brand Book is a document that describes the visual and verbal identity of a brand. It includes the logo, color palette, typography, graphic elements, and rules for their use. The Brand Book may also contain guidelines for the brand's tone of communication and positioning. This document helps maintain brand consistency across all marketing materials and communications, ensuring a unified style. Having a Brand Book simplifies the work of designers and marketers, helping to create a recognizable and memorable brand.",
+      "WebDesign": "Web design involves creating the visual and functional appearance of websites. It covers aspects such as page structure, navigation, graphic elements, and user interaction. The goal of web design is to create an attractive, user-friendly, and intuitive interface that improves the user experience and helps achieve business goals. Web designers use UX/UI design principles to ensure the usability and visual appeal of the site. A well-thought-out web design can significantly increase user engagement and conversion.",
+      "UxUiDesign": "UX/UI design (User Experience and User Interface) focuses on creating interfaces that are convenient and pleasant to use. UX design involves researching user needs, creating user scenarios and prototypes, testing, and analyzing to ensure the best interaction experience with the product. UI design is responsible for the visual layout of the interface, including buttons, icons, typography, and the color palette. The collaborative work of UX and UI designers allows for creating products that are not only functional and efficient but also aesthetically pleasing, contributing to user satisfaction and loyalty.",
+      "IllustrationsAndIconography": "Illustrations and iconography play an important role in visual communication, helping to convey ideas and information through images. Illustrations can be used in marketing materials, books, websites, and applications, adding uniqueness and emotional appeal. Iconography includes creating icons that simplify perception and navigation, improving the user experience. Quality illustrations and icons should be clear, memorable, and match the brand's style, helping to create a unified visual language.",
+      "3DModelingAndVisualization": "3D modeling and visualization allow creating three-dimensional objects and scenes for various purposes, including architecture, interior design, games, and films. These technologies enable the visualization of concepts and ideas, making them more tangible and understandable. 3D models can be used for prototyping, animation, and virtual reality, providing a realistic representation of products and projects. Visualization helps improve decision-making processes, reduce development time, and enhance the quality of the final product.",
+      "Infographics": "Infographics are a way of visually presenting data and information, helping to simplify complex concepts and make them more understandable. They combine text, graphics, and charts to effectively convey key messages and insights. Infographics are used in marketing, education, journalism, and other fields where it is important to communicate information quickly and clearly. A well-designed infographic should be visually appealing, informative, and easy to understand, contributing to better comprehension and retention of information."
+    },
+    "designSecondArray": {
+      "PackageDesign": "Packaging design involves developing packaging for products that not only protects them but also attracts customers' attention by conveying the brand's values. It includes selecting materials, form, color palette, typography, and graphic elements. Packaging design plays a key role in marketing as it can influence the buyer's purchase decision. A successful packaging design should be functional, environmentally sustainable, and aesthetically pleasing, helping to make the product stand out on the shelf and create a positive impression of the brand.",
+      "TypographyAndLettering": "Typography and lettering play an important role in design, affecting the perception of text and the overall aesthetics of a project. Typography involves selecting fonts, sizes, spacing, and alignment to ensure readability and visual harmony. Lettering is the art of drawing letters, creating unique and expressive inscriptions. These elements are used in logos, posters, book covers, web design, and other projects where text is important. Proper use of typography and lettering helps enhance the message and create a memorable visual style.",
+      "SocialMediaDesign": "Social media design involves creating visual content for platforms such as Facebook, Instagram, Twitter, and others. This content includes posts, stories, profile covers, and advertising materials. Social media design should be adapted to the requirements and formats of each platform, ensuring visual consistency and attractiveness. Effective design helps increase audience engagement, enhance brand recognition, and maintain active interaction with followers.",
+      "AnimationAndVideoDesign": "Animation and video design include creating dynamic content that attracts attention and conveys information more effectively than static images. This can be 2D and 3D animation, video clips, commercials, educational videos, and more. Animation and video help visualize complex ideas, improve perception and retention of information, and create an emotional connection with the audience. Quality animation and video content require a creative approach, and the skills of a screenwriter, designer, and animator.",
+      "CorporateIdentityDevelopment": "Corporate identity includes creating a unique visual and verbal brand image that helps it stand out from competitors and create a lasting impression on the target audience. This includes the logo, color palette, typography, graphic elements, and rules for their use. Developing a corporate identity requires a deep understanding of the brand, its values, and its target audience. A well-developed corporate identity contributes to brand recognition, improves communication, and strengthens trust in the brand.",
+      "PhotoRetouchingAndEditing": "Photo retouching and editing involve color correction, defect removal, sharpness improvement, and other image adjustments to enhance its visual quality. These services are widely used in fashion, advertising, product photography, and other fields where high visual appeal is important. Professional photo retouching and editing help create perfect images that meet brand standards and project requirements, contributing to better perception and capturing the audience's attention."
+    },
+    "marketingFisrtArray": {
+      "BannerAdvertisingOnWebsites": "Banner advertising on websites involves placing graphic ads on various web resources to attract attention to products, services, or brands. This form of advertising allows for reaching a broad audience and aims to increase brand awareness and conversion rates. Effective banners should be visually appealing, contain a clear call to action, and be optimized for various devices. Using analytics and targeting can improve ad performance by ensuring banners are shown to the most relevant audience.",
+      "Smm": "Social media marketing involves using platforms like Facebook, Instagram, Twitter, LinkedIn, and others to promote brands and engage with audiences. SMM includes creating and publishing content, interacting with followers, running ad campaigns, and analyzing results. This type of marketing helps improve brand awareness, increase audience engagement, and maintain active customer interaction. An effective SMM strategy requires a deep understanding of the target audience, creative content, and constant data analysis to optimize campaigns.",
+      "ContextualAdvertising": "Contextual advertising refers to ads shown to users based on their search queries and interests. Major platforms for contextual advertising include Google Ads and Yandex.Direct. This type of advertising allows attracting potential customers at the moment of their interest in a product or service, significantly increasing the likelihood of conversion. Contextual advertising requires careful selection of keywords, creating attractive ads, and continuous monitoring of campaigns to improve their effectiveness.",
+      "SeoOptimization": "SEO (Search Engine Optimization) involves improving a website's visibility in search engines by optimizing content, site structure, and external factors. This includes using keywords, improving page load speed, creating quality content, and building links. The goal of SEO is to increase organic traffic to the site, improve its ranking in search engines, and increase conversion rates. An effective SEO strategy requires a deep understanding of search engine algorithms, data analytics, and continuous adaptation to changes in search algorithms.",
+      "TargetedAdvertising": "Targeted advertising allows showing ads to specific groups of users based on their demographic data, interests, and behavior. This form of advertising is used on social networks, search engines, and other platforms to increase the relevance and effectiveness of ad campaigns. Targeted advertising enables more precise reaching of the target audience, increasing the likelihood of conversion and optimizing advertising costs. Effective targeting setup requires data analysis, understanding the target audience, and continuous monitoring of results.",
+      "MarketingStrategy": "A marketing strategy is a plan of actions aimed at achieving business goals through the promotion of products and services. This includes market analysis, defining the target audience, developing a unique selling proposition, and selecting marketing channels. A well-thought-out marketing strategy helps companies effectively use resources, improve customer interaction, and gain competitive advantages. The strategy should be flexible and adapt to market changes and customer needs.",
+      "MarketingAudit": "A marketing audit involves a comprehensive analysis of a company's marketing activities to assess their effectiveness and identify improvement opportunities. This includes analyzing strategies, tactics, campaign results, competitive environment, and customer satisfaction. A marketing audit helps identify the strengths and weaknesses of current marketing efforts, provide optimization recommendations, and develop an action plan for better results. Audits are conducted regularly to maintain competitiveness and improve the efficiency of marketing investments."
+    },
+    "marketingSecondArray": {
+      "EmailCampaigns": "Email marketing involves sending promotional and informational emails to subscribers to attract customers, increase sales, and maintain loyalty. Effective email campaigns should contain personalized messages, attractive design, and a clear call to action. Email marketing allows maintaining direct contact with customers, informing them about news, promotions, and special offers. Automation of email marketing and the use of analytics helps improve targeting, increase email open rates, and conversion rates.",
+      "CompetitorAnalysis": "Competitor analysis involves researching and evaluating the strategies, products, and performance of competing companies. This helps identify the strengths and weaknesses of competitors, determine market trends, and find opportunities to improve one's strategy. Competitor analysis includes collecting data on products, pricing, marketing activities, and customer interaction. These data are used to develop competitive advantages, improve products and services, and make informed business decisions.",
+      "WebAnalytics": "Web analytics involves collecting, measuring, and analyzing data about user behavior on websites and applications. It helps understand how users interact with content, which pages they visit, how much time they spend on the site, and what actions they take. Web analytics is used to optimize user experience, improve conversion rates, and increase the effectiveness of marketing campaigns. Tools like Google Analytics provide detailed reports and insights that help make informed decisions and achieve business goals.",
+      "ContentPlan": "A content plan is a strategy for creating and publishing content to achieve marketing goals. This includes defining the target audience, content topics, publication frequency, and distribution channels. A well-thought-out content plan helps maintain brand consistency, attract and retain the audience, improve SEO metrics, and increase engagement. Content planning allows for more effective use of resources, measuring results, and adapting to changes in audience needs and market conditions."
+    }
+  },
+  "miniBoxes": {
+    "firstItem": {
+      "mainText": "Legal Processing.",
+      "text": "We love creativity, but do not forget about the objective reality, all our business deals are designed in such a way that each party gets the desired result."
+    },
+    "secondItem": {
+      "mainText": "Flexible Solutions.",
+      "text": "We accept project requests all the time and are always happy to handle your request, we are prepared to work with tight deadlines if your situation requires it."
+    },
+    "thirdItem": {
+      "mainText": "Personalization.",
+      "text": "Individual approach to each project, target audience and also to the project goals. We are in constant communication with you throughout the development."
+    }
+  },
+  "contact": {
+    "mainText": "Feeling like you have seen enough?",
+    "spanText": "Lets work together!",
+    "required": "Required fields",
+    "text": {
+        "first": "Or if you have any questions left",
+        "second": "Be sure to contact us, we always love to hear you!"
     }
   }
+}
