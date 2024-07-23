@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { configHeader } from './configHeader';
 import {
   StyledHeader,
@@ -14,6 +14,13 @@ import {
   BoldWord,
   ButtonArrow,
   ImgBear,
+  MenuConteiner,
+  Menu,
+  MenuBlock,
+  Close,
+  ListBlock,
+  ListItem,
+  LogoConteiner,
 } from './styled';
 import { Container } from '../common/styled';
 import HeaderLogo from '../icons/HeaderLogo';
@@ -22,7 +29,19 @@ import LanguageSwitcher from 'components/LanguageSwitch/LanguageSwitch';
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
   const { t } = useTranslation();
+
+  console.log(openMenu);
+
+  const actionOpen = () => {
+    setOpenMenu(true);
+  };
+
+  const actionClose = () => {
+    setOpenMenu(false);
+  };
 
   return (
     <StyledHeader>
@@ -33,15 +52,36 @@ const Header = () => {
             <HeaderNavList>
               {configHeader.map(item => (
                 <li key={item.id}>
-                  <HeaderNavLink href={item.link}>
-                    {t(item.text)}
-                  </HeaderNavLink>
+                  <HeaderNavLink href={item.link}>{t(item.text)}</HeaderNavLink>
                 </li>
               ))}
             </HeaderNavList>
           </Nav>
           <LanguageSwitcher />
         </HeaderNavLogoWrapper>
+        <MenuConteiner>
+          <Menu onClick={actionOpen} />
+        </MenuConteiner>
+        {openMenu ? (
+          <MenuBlock>
+            <Close onClick={actionClose} />
+            <ListBlock>
+              {configHeader.map(item => (
+                <ListItem key={item.id}>
+                  {' '}
+                  <HeaderNavLink href={item.link} onClick={actionClose}>
+                    {t(item.text)}
+                  </HeaderNavLink>
+                </ListItem>
+              ))}
+            </ListBlock>
+            <LogoConteiner  >
+              <HeaderLogo />
+            </LogoConteiner>
+          </MenuBlock>
+        ) : (
+          <></>
+        )}
         <TabletStyleWrapper>
           <ImgBear src={BearPng} />
           <TabletStyleTitle>

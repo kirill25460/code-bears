@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { SlArrowDown } from 'react-icons/sl';
+import { CiMenuBurger } from 'react-icons/ci';
+import { IoMdClose } from 'react-icons/io';
 
 export const ButtonArrow = styled(SlArrowDown)`
   width: 60px;
@@ -103,6 +105,17 @@ export const HeaderNavLogoWrapper = styled.div`
   }
 `;
 
+export const MenuConteiner = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-top: 15px;
+
+  @media (min-width: 1045px) {
+    display: none;
+  }
+`;
+
 export const HeaderNavLink = styled.a`
   text-decoration: none;
   color: #fff;
@@ -112,4 +125,62 @@ export const ImgBear = styled.img`
   width: 36px;
   height: 40px;
   margin-bottom: 37px;
+`;
+
+export const Menu = styled(CiMenuBurger)`
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+`;
+
+export const Close = styled(IoMdClose)`
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  color: #fff;
+`;
+
+export const MenuBlock = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  flex-direction: column;
+`;
+
+export const ListBlock = styled.ul`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const ListItem = styled.li`
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #ffffff;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+`;
+
+export const LogoConteiner = styled.div`
+  margin-top: 150px;
 `;
