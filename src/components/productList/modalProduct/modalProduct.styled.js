@@ -57,6 +57,8 @@ export const ModalText = styled.h2`
   text-align: center;
   line-height: 104%;
 
+  margin-bottom: 40px;
+
   color: #ffffff;
 
   @media (min-width: 768px) {
@@ -74,8 +76,8 @@ export const ModalImg = styled.img`
   width: 260px;
   height: 201px;
   border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  display: block;
 
   @media (min-width: 768px) {
     width: 620px;
@@ -96,6 +98,7 @@ export const ModalDescription = styled.p`
   text-align: center;
   max-width: 260px;
   margin: 0 auto;
+  margin-top: 30px;
 
   color: #ffffff;
 
