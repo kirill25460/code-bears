@@ -6,43 +6,53 @@ import {
   ModalText,
   CloseIcon,
   ModalDescription,
+  ModalConteiner,
 } from './modalProduct.styled';
 import { useTranslation } from 'react-i18next';
 
 const Modal = ({ showModal, closeModal, data }) => {
   const { t } = useTranslation();
+
   useEffect(() => {
     const handleKeyDown = event => {
-      if (event.keyCode === 27) {
-        // закрытие модального окна по клавише "Escape"
+      if (event.key === 'Escape') {
         closeModal();
       }
     };
 
     if (showModal) {
-      document.body.style.overflow = 'hidden'; // блокировка прокрутки при открытии модального окна
+      document.body.style.overflow = 'hidden';
       document.addEventListener('keydown', handleKeyDown);
     } else {
-      document.body.style.overflow = ''; // разблокировка прокрутки при закрытии модального окна
+      document.body.style.overflow = '';
       document.removeEventListener('keydown', handleKeyDown);
     }
 
     return () => {
-      document.body.style.overflow = ''; // разблокировка прокрутки при размонтировании компонента
+      document.body.style.overflow = '';
       document.removeEventListener('keydown', handleKeyDown);
     };
   }, [showModal, closeModal]);
+
   if (!showModal) return null;
 
+  const handleBackgroundClick = e => {
+    if (e.target === e.currentTarget) {
+      closeModal();
+    }
+  };
+
   return (
-    <ModalBackground onClick={closeModal}>
-      <ModalContainer onClick={e => e.stopPropagation()}>
-        <CloseIcon onClick={closeModal} />
-        <ModalText>{t(data.title)}</ModalText>
-        <ModalImg src={data.picture}></ModalImg>
-        <ModalDescription>{t(data.description)}</ModalDescription>
-      </ModalContainer>
-    </ModalBackground>
+    <ModalConteiner onClick={handleBackgroundClick}>
+      <ModalBackground>
+        <ModalContainer>
+          <CloseIcon onClick={closeModal} />
+          <ModalText>{t(data.title)}</ModalText>
+          <ModalImg src={data.picture} alt={data.title} />
+          <ModalDescription>{t(data.description)}</ModalDescription>
+        </ModalContainer>
+      </ModalBackground>
+    </ModalConteiner>
   );
 };
 
