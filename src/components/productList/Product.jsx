@@ -344,6 +344,8 @@ const Product = () => {
     // },
   ];
 
+
+
   return (
     <StyledSection>
       <TitleWrapperProdList>

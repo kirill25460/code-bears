@@ -161,8 +161,10 @@ export const ImageBlock = styled.div`
 `;
 export const ImageBlockMob = styled.div`
   position: relative;
+  margin-bottom: 30px;
   @media (min-width: 768px) {
     display: none;
+    margin-bottom: 0;
   }
 `;
 export const ImageSecondBlock = styled.div`
@@ -286,12 +288,12 @@ export const NumberBlock = styled.p`
   @media (min-width: 1024px) {
     font-weight: 700;
     font-size: 375px;
-    line-height: 330.96px;
+    line-height: 338.96px;
   }
   @media (min-width: 1240px) {
     font-weight: 700;
     font-size: 515px;
-    line-height: 86.5%;
+    line-height: 92.5%;
   }
 `;
 
@@ -300,6 +302,7 @@ export const Image = styled.img`
   height: 269px;
   position: absolute;
   top: 0;
+
   @media (min-width: 1024px) {
     width: 330px;
     height: 330px;
