@@ -106,8 +106,9 @@ const Rocket = () => {
         if (renderer) {
           renderer.setSize(window.innerWidth, window.innerHeight);
         }
-      }
+      } 
     };
+    
 
     if (visible) init();
     window.addEventListener('resize', handleResize);
