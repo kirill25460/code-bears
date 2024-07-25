@@ -40,19 +40,24 @@ export const Section = styled.section`
   }
   @media (min-width: 1045px) {
     min-height: 70vh;
-    
   }
 `;
 
 export const Moon = styled.div`
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 520px;
+  right: 30%;
 
   @media (min-width: 489px) {
     top: 450px;
+    right: 15%;
   }
   @media (min-width: 768px) {
     top: 200px;
+    right: 0;
   }
 
   .moonGlow {
@@ -73,15 +78,22 @@ export const Circle = styled.div`
   animation: ${rotateAnimation} 20s linear infinite;
   position: absolute;
   top: 112%;
-  transform: rotate(45deg); 
+  left: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: 489px) {
     top: 110%;
+    left: 33%;
   }
   @media (min-width: 768px) {
     top: 60%;
+    left: 50%;
   }
   @media (min-width: 1045px) {
     top: 60%;
+    left: 50%;
   }
 `;
 
@@ -95,7 +107,7 @@ export const Span = styled.span`
   transform-style: preserve-3d;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   padding: 2px 1px;
-  transform: rotateY(calc(${props => props.index} * calc(360deg / 40))) translateZ(130px) ;
+  transform: rotateY(calc(${props => props.index} * calc(360deg / 40))) translateZ(130px);
   ${props => props.index === 16 && `
     padding: 2px 15px;
   `}

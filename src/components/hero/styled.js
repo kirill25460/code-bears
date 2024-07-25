@@ -192,6 +192,7 @@ export const Button = styled.button`
 export const HeroSection = styled.section``;
 
 export const HeroTitle = styled.h1`
+  z-index: 10;
   display: none;
   @media (min-width: 768px) {
     display: block;
@@ -254,6 +255,7 @@ export const MainImg = styled.img`
   width: 172px;
   height: 199px;
   margin-bottom: -25px;
+  z-index: 10;
   @media (min-width: 768px) {
     width: 196px;
     height: 227px;
@@ -310,16 +312,9 @@ export const TextButtonWrapper = styled.div`
 export const TextButtonH2 = styled.h2`
   font-weight: 700;
   font-size: 28px;
-  width: 241px;
-  text-align: center;
-  @media (min-width: 768px) {
-    text-align: left;
-    width: 239px;
-  }
+  z-index: 10;
   @media (min-width: 1024px) {
     font-size: 56px;
-    width: 455px;
-    text-align: left;
   }
 `;
 
@@ -329,14 +324,12 @@ export const TextButtonP = styled.p`
   font-weight: 400;
   font-size: 12px;
   line-height: 160%;
+  z-index: 10;
   text-align: center;
   color: #9795b5;
   width: 240px;
-  margin: 0 auto;
   @media (min-width: 768px) {
     width: 240px;
-    text-align: left;
-    margin: 0;
   }
   @media (min-width: 1024px) {
     font-size: 18px;
@@ -363,77 +356,79 @@ export const SliderButtonWrapperMob = styled.div`
 `;
 
 export const SilderButton = styled.button`
-  font-weight: 400;
-  line-height: 18px;
-  padding: 18px 5px;
-  width: 89px;
-  height: 32px;
-  font-family: 'DM Sans', sans-serif;
-  border: 1px solid #d4d2e3;
-  font-style: normal;
-  font-size: 9px;
+z-index: 10;
+font-weight: 400;
+line-height: 18px;
+padding: 18px 5px;
+width: 89px;
+height: 32px;
+font-family: 'DM Sans', sans-serif;
+border: 1px solid #D4D2E3;
+font-style: normal;
+font-size: 9px;
   border-radius: 30px;
   order: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(99.29deg, #fff 100%);
-  color: #5d5a88;
+  background: linear-gradient(99.29deg, #FFF 100%);
+  color: #5D5A88;
   font-family: 'DM Sans', sans-serif;
   &:hover {
     background-color: #282828;
-    color: #ffffff;
+    color: #FFFFFF;
     transition: 0.7s;
   }
   @media (min-width: 1024px) {
     font-size: 16px;
     width: 155px;
-    height: 54px;
-    padding: 15px 20px;
-    font-weight: 700;
+  height: 54px;
+  padding: 15px 20px;
+  font-weight: 700;
   }
 `;
 
 export const ContactButton = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 18px 24px;
-  width: 89px;
-  height: 32px;
-  font-family: 'DM Sans', sans-serif;
-  border: 1px solid #d4d2e3;
-  font-style: normal;
-  font-size: 9px;
-  text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 18px 24px;
+width: 89px;
+height: 32px;
+font-family: 'DM Sans', sans-serif;
+border: 1px solid #D4D2E3;
+font-style: normal;
+font-size: 9px;
+text-align: center;
   font-weight: 700;
   line-height: 18px;
-  background: linear-gradient(99.29deg, #282828 7.44%, #2d2d2d 96.69%);
-  border-radius: 30px;
+background: linear-gradient(99.29deg, #282828 7.44%, #2D2D2D 96.69%);
+border-radius: 30px;
 
-  font-style: normal;
-  font-weight: 700;
-  color: #ffffff;
-  border: 1px solid #282828;
-  &:hover {
-    background: #ffffff;
+font-style: normal;
+font-weight: 700;
+color: #FFFFFF;
+border: 1px solid #282828;
+&:hover {
+    background: #FFFFFF;
     color: #282828;
     transition: 0.7s;
+
   }
   @media (min-width: 1024px) {
     font-size: 16px;
     width: 120px;
-    height: 54px;
-    padding: 15px 20px;
+height: 54px;
+  padding: 15px 20px;
   }
 `;
 
 export const HrefButton = styled.a`
-  font-family: 'DM Sans', sans-serif;
+ font-family: 'DM Sans', sans-serif;
   color: #fff;
   font-weight: 400;
-  line-height: 18px;
+line-height: 18px;
   &:hover {
     color: rgba(40, 40, 40, 1);
     transition: 0.7s;
@@ -442,19 +437,19 @@ export const HrefButton = styled.a`
 
 export const MainImgWrap = styled.div`
   position: relative;
-  width: 240px;
-  height: 250px;
-
+  width:240px;
+  height:250px;
+ 
   @media (min-width: 744px) {
     width: 275px;
   }
   @media (min-width: 1024px) {
     width: 500px;
-    height: 450px;
+    height:450px;
   }
   @media (min-width: 1440px) {
     width: 550px;
-    height: 500px;
+    height:500px;
   }
   &:hover img {
     &:nth-child(1) {
@@ -469,13 +464,15 @@ export const MainImgWrap = styled.div`
     &:nth-child(4) {
       transform: translate(-250px, 210px);
     }
+ 
   }
 `;
 
 export const MainImgWork = styled.img`
   width: 250px;
-  position: absolute;
+  position:absolute;
   transition: transform 0.3s ease;
+  z-index: 10; 
 
   @media (min-width: 744px) {
     width: 275px;
@@ -490,16 +487,20 @@ export const MainImgWork = styled.img`
 
 export const MainImgWork2 = styled(MainImgWork)`
   top: 15px;
+  z-index: 10;
 `;
 
 export const MainImgWork3 = styled(MainImgWork)`
   top: -15px;
+  z-index: 10;
 `;
 
 export const MainImgWork4 = styled(MainImgWork)`
   left: 15px;
+  z-index: 10;
 `;
 
 export const MainImgWork5 = styled(MainImgWork)`
   left: -15px;
+  z-index: 10;
 `;
