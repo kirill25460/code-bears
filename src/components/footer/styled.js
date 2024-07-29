@@ -1,10 +1,12 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
 
 export const StyledFooter = styled.footer`
   background-color: #111112;
   padding-top: 100px;
   padding-bottom: 100px;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
+
+
 `;
 
 export const FooterNav = styled.nav`
@@ -31,7 +33,7 @@ export const FooterContCardLi = styled.li`
   }
   @media (min-width: 768px) {
     margin-right: 0;
-    font-family: "DM Sans";
+    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -70,7 +72,7 @@ export const FooterContCardText = styled.span`
 export const FooterRoutCardLi = styled.li`
   list-style: none;
   margin-top: 15px;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -96,7 +98,7 @@ export const FooterContactCardUl = styled.ul`
   }
 `;
 export const FooterInfoCardUl = styled.ul`
-width:221px;
+  width: 221px;
 `;
 export const FooterRoutCardUl = styled.ul`
   margin-top: 40px;
@@ -113,7 +115,6 @@ export const FooterRoutCardLink = styled.a`
 export const FooterRoutCardSpan = styled.span`
   color: #fff;
 `;
-
 
 export const ImgBearFooter = styled.img`
   width: 46px;

@@ -66,6 +66,9 @@ export const BigWordsWraper = styled.div`
   flex-direction: row-reverse;
   align-items: start;
   overflow: hidden;
+
+  z-index: 2;
+  position: relative;
   @media (min-width: 1024px) {
     align-items: start;
   }
@@ -106,4 +109,7 @@ export const StyledDivPosition = styled.div`
 export const ConteinerUl = styled.div`
   display: flex;
   justify-content: center;
+
+  position: relative;
+  z-index: 2;
 `;

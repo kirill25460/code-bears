@@ -18,6 +18,9 @@ export const TitleWrapperProdList = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  z-index: 2;
+  position: relative;
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;

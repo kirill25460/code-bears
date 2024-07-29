@@ -31,7 +31,10 @@ export const Section = styled.section`
   transform-style: preserve-3d;
   margin: 0 auto 250px;
   position: relative;
-  transform: rotate(345deg); 
+  transform: rotate(345deg);
+
+  z-index: 2;
+  position: relative;
   @media (min-width: 489px) {
     min-height: 60vh;
   }
@@ -107,55 +110,83 @@ export const Span = styled.span`
   transform-style: preserve-3d;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   padding: 2px 1px;
-  transform: rotateY(calc(${props => props.index} * calc(360deg / 40))) translateZ(130px);
-  ${props => props.index === 16 && `
+  transform: rotateY(calc(${props => props.index} * calc(360deg / 40)))
+    translateZ(130px);
+  ${props =>
+    props.index === 16 &&
+    `
     padding: 2px 15px;
   `}
-  ${props => props.index === 33 && `
+  ${props =>
+    props.index === 33 &&
+    `
     padding: 2px 13px;
   `}
-  ${props => props.index === 27 && `
+  ${props =>
+    props.index === 27 &&
+    `
     padding: 2px 8px;
   `}
-  ${props => props.index === 28 && `
+  ${props =>
+    props.index === 28 &&
+    `
     padding: 2px 8px;
   `}
-  ${props => props.index === 8 && `
+  ${props =>
+    props.index === 8 &&
+    `
     padding: 2px 8px;
   `}
-  ${props => props.index === 9 && `
+  ${props =>
+    props.index === 9 &&
+    `
     padding: 2px 11px;
   `}
-  ${props => props.index === 10 && `
+  ${props =>
+    props.index === 10 &&
+    `
     padding: 2px 11px;
   `}
-  ${props => props.index === 34 && `
+  ${props =>
+    props.index === 34 &&
+    `
     padding: 2px 0px;
   `}
-  ${props => props.index === 35 && `
+  ${props =>
+    props.index === 35 &&
+    `
     padding: 2px 6px;
   `}
-  ${props => props.index === 36 && `
+  ${props =>
+    props.index === 36 &&
+    `
     padding: 2px 6px;
   `}
-  ${props => props.index === 13 && `
+  ${props =>
+    props.index === 13 &&
+    `
     padding: 2px 0px;
   `}
-  ${props => props.index === 14 && `
+  ${props =>
+    props.index === 14 &&
+    `
     padding: 2px 6px;
   `}
   @media (min-width: 489px) {
     font-size: 3em;
-    transform: rotateY(calc(${props => props.index} * calc(360deg / 40))) translateZ(220px);
+    transform: rotateY(calc(${props => props.index} * calc(360deg / 40)))
+      translateZ(220px);
   }
 
   @media (min-width: 768px) {
     font-size: 4em;
-    transform: rotateY(calc(${props => props.index} * calc(360deg / 40))) translateZ(320px);
+    transform: rotateY(calc(${props => props.index} * calc(360deg / 40)))
+      translateZ(320px);
   }
 
   @media (min-width: 1045px) {
     font-size: 5em;
-    transform: rotateY(calc(${props => props.index} * calc(360deg / 40))) translateZ(400px);
+    transform: rotateY(calc(${props => props.index} * calc(360deg / 40)))
+      translateZ(400px);
   }
 `;
