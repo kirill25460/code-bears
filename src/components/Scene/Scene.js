@@ -9,21 +9,26 @@ const Rocket = () => {
   const rocketRef = useRef(null);
   const curveRef = useRef(null);
   const [visible, setVisible] = useState(window.innerWidth >= 1240);
-  const [initialized, setInitialized] = useState(false); 
 
   useEffect(() => {
+    const mountElement = mountRef.current;
     let scene, camera, renderer, light, loader;
 
     const init = () => {
-      if (initialized) return;
       scene = new THREE.Scene();
-      camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
       camera.position.set(0, 0, 10);
 
       renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
-      if (mountRef.current) {
-        mountRef.current.appendChild(renderer.domElement);
+
+      if (mountElement) {
+        mountElement.appendChild(renderer.domElement);
       }
 
       light = new THREE.DirectionalLight(0xffffff, 1);
@@ -32,10 +37,9 @@ const Rocket = () => {
 
       loader = new GLTFLoader();
       loader.load(rocketModel, onLoad, undefined, onError);
-      setInitialized(true); 
     };
 
-    const onLoad = (gltf) => {
+    const onLoad = gltf => {
       const rocket = gltf.scene;
       rocket.scale.set(0.5, 0.5, 0.5);
       scene.add(rocket);
@@ -58,7 +62,7 @@ const Rocket = () => {
       animate();
     };
 
-    const onError = (error) => {
+    const onError = error => {
       console.error('An error happened while loading the model', error);
     };
 
@@ -71,17 +75,39 @@ const Rocket = () => {
     };
 
     const updateRocketPosition = () => {
-      if (rocketRef.current && curveRef.current && mountRef.current) {
-        const scrollPosition = (window.pageYOffset - mountRef.current.offsetTop) / (document.documentElement.scrollHeight - window.innerHeight);
+      if (rocketRef.current && curveRef.current && mountElement) {
+        const scrollPosition = Math.max(
+          0,
+          Math.min(
+            1,
+            (window.pageYOffset - mountElement.offsetTop) /
+              (document.documentElement.scrollHeight - window.innerHeight)
+          )
+        );
         const point = curveRef.current.getPointAt(scrollPosition);
-        const tangent = curveRef.current.getTangentAt(scrollPosition).normalize();
 
-        rocketRef.current.position.copy(point);
+        if (point) {
+          const tangent = curveRef.current
+            .getTangentAt(scrollPosition)
+            .normalize();
 
-        const direction = new THREE.Vector3(0, -5, 0).normalize();
-        rocketRef.current.lookAt(point.clone().add(direction));
+          rocketRef.current.position.copy(point);
 
-        rocketRef.current.rotation.setFromQuaternion(new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), tangent));
+          const direction = new THREE.Vector3(0, -5, 0).normalize();
+          rocketRef.current.lookAt(point.clone().add(direction));
+
+          rocketRef.current.rotation.setFromQuaternion(
+            new THREE.Quaternion().setFromUnitVectors(
+              new THREE.Vector3(0, 1, 0),
+              tangent
+            )
+          );
+        } else {
+          console.error(
+            'Point is undefined for scrollPosition:',
+            scrollPosition
+          );
+        }
       }
     };
 
@@ -90,8 +116,10 @@ const Rocket = () => {
 
       if (width < 1240) {
         setVisible(false);
-        if (renderer && mountRef.current) {
-          mountRef.current.removeChild(renderer.domElement);
+        if (renderer && mountElement) {
+          if (mountElement.contains(renderer.domElement)) {
+            mountElement.removeChild(renderer.domElement);
+          }
           renderer.dispose();
         }
       } else {
@@ -106,9 +134,8 @@ const Rocket = () => {
         if (renderer) {
           renderer.setSize(window.innerWidth, window.innerHeight);
         }
-      } 
+      }
     };
-    
 
     if (visible) init();
     window.addEventListener('resize', handleResize);
@@ -117,15 +144,29 @@ const Rocket = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('scroll', updateRocketPosition);
-      if (mountRef.current && renderer) {
-        mountRef.current.removeChild(renderer.domElement);
+      if (mountElement && renderer) {
+        if (mountElement.contains(renderer.domElement)) {
+          mountElement.removeChild(renderer.domElement);
+        }
         renderer.dispose();
       }
-      setInitialized(false); 
     };
-  }, [visible]);
+  }, [visible]); // Оставляем только `visible` в зависимостях
 
-  return visible ? <div ref={mountRef} style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 1 }}></div> : null;
+  return visible ? (
+    <div
+      ref={mountRef}
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        pointerEvents: 'none',
+        zIndex: 1,
+      }}
+    ></div>
+  ) : null;
 };
 
 export default Rocket;

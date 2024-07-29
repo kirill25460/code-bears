@@ -9,7 +9,8 @@ export const StyledForm = styled(Form)`
   max-width: 400px;
   margin: 0 auto;
 
-
+  position: relative;
+  z-index: 2;
 `;
 
 export const StyledField = styled(Field)`
@@ -21,8 +22,8 @@ export const StyledField = styled(Field)`
   color: #fff;
   &:focus {
     outline: none;
-    border-color: none; 
-    box-shadow: 0 3px 5px rgba(81, 151, 255, 0.5); 
+    border-color: none;
+    box-shadow: 0 3px 5px rgba(81, 151, 255, 0.5);
   }
 `;
 
@@ -37,8 +38,8 @@ export const StyledFieldMess = styled(Field)`
   color: #fff;
   &:focus {
     outline: none;
-    border-color: none; 
-    box-shadow: 0 3px 5px rgba(81, 151, 255, 0.5); 
+    border-color: none;
+    box-shadow: 0 3px 5px rgba(81, 151, 255, 0.5);
   }
 `;
 
@@ -81,6 +82,9 @@ export const StyledTitle = styled.h4`
   display: block;
   text-align: center;
 
+  position: relative;
+  z-index: 2;
+
   margin-bottom: 5%;
 
   font-family: 'DM Sans';
@@ -108,6 +112,8 @@ export const StyledText = styled.p`
   text-align: center;
 
   font-size: 15px;
+  position: relative;
+  z-index: 2;
 
   padding-bottom: 80px;
 
@@ -146,7 +152,6 @@ export const ColorConteiner = styled.div`
   }
 `;
 
-
 export const InfoText = styled.p`
   font-family: 'DM Sans';
   font-style: normal;
@@ -154,4 +159,6 @@ export const InfoText = styled.p`
   font-size: 15px;
   text-align: center;
   margin-bottom: 25px;
+
+  z-index: 2;
 `;
