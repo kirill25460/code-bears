@@ -111,5 +111,5 @@ export const ConteinerUl = styled.div`
   justify-content: center;
 
   position: relative;
-  z-index: 2;
+  z-index: 3;
 `;
