@@ -37,6 +37,10 @@ import {
 import { Container } from '../../components/common/styled';
 import ImgBear from '../../images/main/mainBigBear.png';
 import ImgSlider from '../../images/main/slider.png';
+import ImgSlider2 from '../../images/main/slider2.png';
+import ImgSlider3 from '../../images/main/slider3.png';
+import ImgSlider4 from '../../images/main/slider4.png';
+import ImgSlider5 from '../../images/main/slider5.png';
 import Modal from '../common/modal/Modal';
 import bl from '../../images/main/block.png';
 import bg from '../../images/main/block_shadow.png';
@@ -73,9 +77,7 @@ const Hero = () => {
             <BlockImg src={bl} />
             <BlockShadowImg src={bg} />
             <OverlayContent>
-              <ImageText>
-                {t('hero.text')}
-              </ImageText>
+              <ImageText>{t('hero.text')}</ImageText>
 
               <FlexBox>
                 <BookService>by: BookService</BookService>
@@ -88,12 +90,8 @@ const Hero = () => {
         </BearWrapper>
         <SliderWrapper>
           <TextButtonWrapper>
-            <TextButtonH2>
-              {t('hero.mainText')}
-            </TextButtonH2>
-            <TextButtonP>
-              {t('hero.textItem')}
-            </TextButtonP>
+            <TextButtonH2>{t('hero.mainText')}</TextButtonH2>
+            <TextButtonP>{t('hero.textItem')}</TextButtonP>
             <SliderButtonWrapper>
               <ContactButton onClick={handleModalOpen}>Contacts</ContactButton>
               <SilderButton>
@@ -105,10 +103,10 @@ const Hero = () => {
             {isModalOpen && <Modal onClick={handleModalClose} />}
           </TextButtonWrapper>
           <MainImgWrap>
-            <MainImgWork src={ImgSlider} alt="slider" />
-            <MainImgWork2 src={ImgSlider} alt="slider" />
-            <MainImgWork3 src={ImgSlider} alt="slider" />
-            <MainImgWork4 src={ImgSlider} alt="slider" />
+            <MainImgWork src={ImgSlider5} alt="slider" />
+            <MainImgWork2 src={ImgSlider2} alt="slider" />
+            <MainImgWork3 src={ImgSlider3} alt="slider" />
+            <MainImgWork4 src={ImgSlider4} alt="slider" />
             <MainImgWork5 src={ImgSlider} alt="slider" />
           </MainImgWrap>
 
