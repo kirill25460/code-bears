@@ -39,13 +39,14 @@ const Rocket = () => {
       loader.load(rocketModel, onLoad, undefined, onError);
     };
 
-    const onLoad = gltf => {
+    const onLoad = (gltf) => {
       const rocket = gltf.scene;
       rocket.scale.set(0.5, 0.5, 0.5);
       scene.add(rocket);
       rocketRef.current = rocket;
 
       const curve = new CatmullRomCurve3([
+        new THREE.Vector3(-5, 20, -5),
         new THREE.Vector3(-5, 10, -5),
         new THREE.Vector3(-5, 4, -5),
         new THREE.Vector3(-10, -6, -10),
@@ -53,16 +54,27 @@ const Rocket = () => {
         new THREE.Vector3(-10, -2, 0),
         new THREE.Vector3(-10, -8, -10),
         new THREE.Vector3(-5, -9, -5),
-        new THREE.Vector3(-4, -4, -5),
-        new THREE.Vector3(-4, -3.5, -5),
-        new THREE.Vector3(-4, -3, -5),
+        new THREE.Vector3(0, -9, -5),
+        new THREE.Vector3(0, -8, -5),
+        new THREE.Vector3(0, -7, -5),
+        new THREE.Vector3(0, -6, -5),
+        new THREE.Vector3(0, -5, -5),
+        new THREE.Vector3(0, -4, -5),
+        new THREE.Vector3(0, -5.5, -5),
+        new THREE.Vector3(0, -6, -5),
+        new THREE.Vector3(0, -6.5, -5),
+        new THREE.Vector3(0, -7, -5),
+        new THREE.Vector3(0, -7.5, -5),
+        new THREE.Vector3(0, -8, -5),
+        new THREE.Vector3(0, -9, -5),
+        new THREE.Vector3(0, -10, -5),
       ]);
 
       curveRef.current = curve;
       animate();
     };
 
-    const onError = error => {
+    const onError = (error) => {
       console.error('An error happened while loading the model', error);
     };
 
@@ -81,32 +93,28 @@ const Rocket = () => {
           Math.min(
             1,
             (window.pageYOffset - mountElement.offsetTop) /
-              (document.documentElement.scrollHeight - window.innerHeight)
+            (document.documentElement.scrollHeight - window.innerHeight)
           )
         );
         const point = curveRef.current.getPointAt(scrollPosition);
 
         if (point) {
-          const tangent = curveRef.current
-            .getTangentAt(scrollPosition)
-            .normalize();
-
+          const tangent = curveRef.current.getTangentAt(scrollPosition).normalize();
           rocketRef.current.position.copy(point);
 
           const direction = new THREE.Vector3(0, -5, 0).normalize();
           rocketRef.current.lookAt(point.clone().add(direction));
 
-          rocketRef.current.rotation.setFromQuaternion(
-            new THREE.Quaternion().setFromUnitVectors(
-              new THREE.Vector3(0, 1, 0),
-              tangent
-            )
-          );
-        } else {
-          console.error(
-            'Point is undefined for scrollPosition:',
-            scrollPosition
-          );
+          if (scrollPosition > 0.9) {
+            rocketRef.current.rotation.set(0, 0, 0); 
+          } else {
+            rocketRef.current.rotation.setFromQuaternion(
+              new THREE.Quaternion().setFromUnitVectors(
+                new THREE.Vector3(0, 1, 0),
+                tangent
+              )
+            );
+          }
         }
       }
     };
@@ -151,7 +159,7 @@ const Rocket = () => {
         renderer.dispose();
       }
     };
-  }, [visible]); // Оставляем только `visible` в зависимостях
+  }, [visible]);
 
   return visible ? (
     <div
