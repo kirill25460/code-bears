@@ -80,8 +80,8 @@ export const Circle = styled.div`
   transform-style: preserve-3d;
   animation: ${rotateAnimation} 20s linear infinite;
   position: absolute;
-  top: 112%;
-  left: 15%;
+  top: 113%;
+  left: 18%;
   display: flex;
   justify-content: center;
   align-items: center;

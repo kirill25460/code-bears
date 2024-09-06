@@ -8,7 +8,7 @@ const Rocket = () => {
   const mountRef = useRef(null);
   const rocketRef = useRef(null);
   const curveRef = useRef(null);
-  const [visible, setVisible] = useState(window.innerWidth >= 1240);
+  const [visible, setVisible] = useState(window.innerWidth >= 1310);
 
   useEffect(() => {
     const mountElement = mountRef.current;

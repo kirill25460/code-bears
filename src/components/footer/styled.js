@@ -5,8 +5,6 @@ export const StyledFooter = styled.footer`
   padding-top: 100px;
   padding-bottom: 100px;
   font-family: 'DM Sans', sans-serif;
-
-
 `;
 
 export const FooterNav = styled.nav`
@@ -14,9 +12,11 @@ export const FooterNav = styled.nav`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
   @media (min-width: 768px) {
     justify-content: space-between;
 
+    position: relative;
     flex-direction: unset;
   }
 `;
@@ -119,4 +119,12 @@ export const FooterRoutCardSpan = styled.span`
 export const ImgBearFooter = styled.img`
   width: 46px;
   height: 50px;
+
+  position: unset;
+
+  @media (min-width: 1310px) {
+    position: absolute;
+    top: -65px;
+    left: 585px;
+  }
 `;
