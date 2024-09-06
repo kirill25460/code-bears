@@ -159,6 +159,6 @@ export const InfoText = styled.p`
   font-size: 15px;
   text-align: center;
   margin-bottom: 25px;
-
+  position: relative;
   z-index: 2;
 `;
