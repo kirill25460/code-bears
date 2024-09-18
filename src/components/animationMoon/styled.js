@@ -29,9 +29,9 @@ export const Section = styled.section`
   align-items: center;
   min-height: 70vh;
   transform-style: preserve-3d;
-  margin: 0 auto 250px;
+  margin: 0 0 250px 150px;
   position: relative;
-  transform: rotate(345deg);
+  transform: rotate(360deg);
 
   z-index: 2;
   position: relative;
@@ -40,9 +40,11 @@ export const Section = styled.section`
   }
   @media (min-width: 768px) {
     min-height: 50vh;
+    margin-left: 0;
   }
   @media (min-width: 1045px) {
     min-height: 70vh;
+    margin-left: 85px;
   }
 `;
 
@@ -80,14 +82,14 @@ export const Circle = styled.div`
   transform-style: preserve-3d;
   animation: ${rotateAnimation} 20s linear infinite;
   position: absolute;
-  top: 113%;
+  top: 93%;
   left: 18%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (min-width: 489px) {
-    top: 110%;
+    top: 90%;
     left: 33%;
   }
   @media (min-width: 768px) {
